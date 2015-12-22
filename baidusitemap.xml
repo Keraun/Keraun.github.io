@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+    
+    
+  <url>
+    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
+    <lastmod>2015-12-22T11:21:37.000Z</lastmod>
+    <data>
+        <display>
+        <title>iwulyの学习笔记之:重绘(redraw)和重排(reflow)</title>
+        <pubTime>2014-09-06T12:26:04.000Z</pubTime>
+        
+        <tag>重排</tag>
+         
+        <tag>重绘</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://iwuly.com/2014/09/02/Hello/</loc>
+    <lastmod>2015-11-29T10:29:49.000Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2014-09-02T11:16:07.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+</urlset>

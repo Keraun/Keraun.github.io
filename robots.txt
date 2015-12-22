@@ -1,0 +1,9 @@
+# hexo robots.txt
+User-agent: *
+Allow: /
+Allow: /archives/
+
+Disallow: /static/
+
+Sitemap: http://iwuly.com/sitemap.xml
+Sitemap: http://iwuly.com/baidusitemap.xml
