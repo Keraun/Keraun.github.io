@@ -4,6 +4,25 @@
     padding-left: 75px;
   }
 }
+@media screen and (min-width: 1024px) {
+  #sidebar .profile span {
+    display: block;
+    padding: 35px 0 10px 0;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(239, 239, 239, 0.8);
+    text-shadow: 0 1px #333;
+  }
+  #sidebar .buttons li a {
+    padding-left: 72px;
+  }
+  #sidebar .profile a, #sidebar .profile img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 25px rgb(244, 244, 244); 
+  }
+}
 @media screen and (min-width: 768px) {
   html {
     background: url(/static/images/bg.jpg) no-repeat 120px;
@@ -27,23 +46,6 @@
     to {
       opacity:1;
     }
-  }
-  #sidebar .profile span {
-    display: block;
-    padding: 35px 0 10px 0;
-    font-size: 30px;
-    font-weight: 500;
-    color: rgba(239, 239, 239, 0.8);
-    text-shadow: 0 1px #333;
-  }
-  #sidebar .buttons li a {
-    padding-left: 72px;
-  }
-  #sidebar .profile a, #sidebar .profile img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 25px rgb(244, 244, 244); 
   }
   #sidebar {
     background: url("/static/images/slider.png");
