@@ -23,6 +23,14 @@
       opacity:1;
     }
   }
+  #sidebar .profile span {
+    display: block;
+    padding: 35px 0 10px 0;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(239, 239, 239, 0.8);
+    text-shadow: 0 1px #333;
+  }
   #sidebar .buttons li a {
     padding-left: 55px;
   }
