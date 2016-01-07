@@ -3,6 +3,44 @@
 
 
     
+  <url>
+    <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
+    <lastmod>2016-01-07T13:42:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>Study notes: Ajax</title>
+        <pubTime>2015-02-01T13:05:54.000Z</pubTime>
+        
+        <tag>Ajax</tag>
+         
+        <tag>javaScript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
+    <lastmod>2016-01-07T13:39:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>Study notes: 重绘(redraw)和重排(reflow)</title>
+        <pubTime>2014-09-06T12:26:04.000Z</pubTime>
+        
+        <tag>重排</tag>
+         
+        <tag>重绘</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
     
   <url>
@@ -16,25 +54,6 @@
         <tag>杂谈</tag>
          
         <tag>畅想</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
-    <lastmod>2015-12-31T06:26:12.000Z</lastmod>
-    <data>
-        <display>
-        <title>iwulyの学习笔记之:重绘(redraw)和重排(reflow)</title>
-        <pubTime>2014-09-06T12:26:04.000Z</pubTime>
-        
-        <tag>重排</tag>
-         
-        <tag>重绘</tag>
          
          
            
