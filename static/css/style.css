@@ -27,25 +27,6 @@
   html {
     background: url(/static/images/bg.jpg) no-repeat 120px;
     background-size: cover;
-    animation:fadeIn .3s both;
-    -webkit-animation:fadeIn .3s both;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity:1;
-    }
-    to {
-      opacity:1;
-    }
-  }
-
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity:1;
-    }
-    to {
-      opacity:1;
-    }
   }
   #sidebar {
     background: url("/static/images/slider.png");
