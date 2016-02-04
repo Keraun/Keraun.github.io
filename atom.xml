@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我们的征途是星辰大海]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://iwuly.com/"/>
-  <updated>2016-02-04T04:10:27.000Z</updated>
+  <updated>2016-02-04T07:24:14.000Z</updated>
   <id>http://iwuly.com/</id>
   
   <author>
@@ -15,11 +15,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[那些年在移动端开发中遇到的坑]]></title>
+    <title><![CDATA[移动端适配方案hotcss的实战与应用]]></title>
+    <link href="http://iwuly.com/2016/02/04/hotcss/"/>
+    <id>http://iwuly.com/2016/02/04/hotcss/</id>
+    <published>2016-02-04T07:23:06.000Z</published>
+    <updated>2016-02-04T07:24:14.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="hotcss" scheme="http://iwuly.com/tags/hotcss/"/>
+    
+      <category term="mobile" scheme="http://iwuly.com/tags/mobile/"/>
+    
+      <category term="移动端" scheme="http://iwuly.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+      <category term="适配方案" scheme="http://iwuly.com/tags/%E9%80%82%E9%85%8D%E6%96%B9%E6%A1%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[移动端开发中遇到的那些坑]]></title>
     <link href="http://iwuly.com/2016/01/28/pit-in-mobile-development/"/>
     <id>http://iwuly.com/2016/01/28/pit-in-mobile-development/</id>
     <published>2016-01-28T04:02:43.000Z</published>
-    <updated>2016-02-04T04:10:27.000Z</updated>
+    <updated>2016-02-04T07:25:44.000Z</updated>
     <content type="html"></content>
     <summary type="html">
     
@@ -142,6 +163,38 @@
       <category term="杂谈" scheme="http://iwuly.com/tags/%E6%9D%82%E8%B0%88/"/>
     
       <category term="畅想" scheme="http://iwuly.com/tags/%E7%95%85%E6%83%B3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Study notes: 本地存储和离线存储]]></title>
+    <link href="http://iwuly.com/2015/05/10/web-storage/"/>
+    <id>http://iwuly.com/2015/05/10/web-storage/</id>
+    <published>2015-05-10T07:15:23.000Z</published>
+    <updated>2016-02-04T07:25:00.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="local storage" scheme="http://iwuly.com/tags/local-storage/"/>
+    
+      <category term="session storage" scheme="http://iwuly.com/tags/session-storage/"/>
+    
+      <category term="web storage" scheme="http://iwuly.com/tags/web-storage/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Study notes: web 实时通信与跨文档通信]]></title>
+    <link href="http://iwuly.com/2015/04/20/web-socket/"/>
+    <id>http://iwuly.com/2015/04/20/web-socket/</id>
+    <published>2015-04-20T07:20:07.000Z</published>
+    <updated>2016-02-04T07:24:33.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
     
   </entry>
   
