@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我们的征途是星辰大海]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://iwuly.com/"/>
-  <updated>2016-02-04T04:02:43.000Z</updated>
+  <updated>2016-02-04T04:04:48.000Z</updated>
   <id>http://iwuly.com/</id>
   
   <author>
@@ -19,11 +19,15 @@
     <link href="http://iwuly.com/2016/02/04/pit-in-mobile-development/"/>
     <id>http://iwuly.com/2016/02/04/pit-in-mobile-development/</id>
     <published>2016-02-04T04:02:43.000Z</published>
-    <updated>2016-02-04T04:02:43.000Z</updated>
+    <updated>2016-02-04T04:04:48.000Z</updated>
     <content type="html"></content>
     <summary type="html">
     
     </summary>
+    
+      <category term="mobile" scheme="http://iwuly.com/tags/mobile/"/>
+    
+      <category term="移动端" scheme="http://iwuly.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
     
   </entry>
   
