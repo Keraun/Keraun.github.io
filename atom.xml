@@ -57,7 +57,7 @@
     <link href="http://iwuly.com/2016/01/03/Design-Patterns-Observer/"/>
     <id>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</id>
     <published>2016-01-03T15:27:09.000Z</published>
-    <updated>2016-02-04T04:41:44.000Z</updated>
+    <updated>2016-02-04T08:25:19.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>学习观察者模式的时候发现自己有很多不懂,主要是平时项目没有用到,所以比较陌生。工作之余抓着间隙虚心向同事讨教了几招,整理了一下自己的近期学习笔记。如有纰漏，欢迎留言&amp;评论~~</p>
 </blockquote>
@@ -94,7 +94,7 @@
 <p>  订阅事件(sub):生成一个键制度,key存放事件名,value存放函数的引用.<br>  发布事件(pub):查找对应的key值，并将key对应的value里function都执行一遍<br>  取消订阅(unsub):去掉key值及其对应的value值。</p>
 <h5 id="3-2__u5B9E_u73B0_u4EE3_u7801"><a href="#3-2__u5B9E_u73B0_u4EE3_u7801" class="headerlink" title="3.2 实现代码"></a>3.2 实现代码</h5><p>构建一个事件管理器对象:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">$, window, undefined</span>) </span>&#123;</span><br><span class="line">  <span class="comment">//构建一个事件管理器对象</span></span><br><span class="line">  <span class="built_in">window</span>.EventCenter = &#123;</span><br><span class="line">    o: $(&#123;&#125;), <span class="comment">//创建一个空jq对象,用来存储订阅关系数据</span></span><br><span class="line">    sub: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">//订阅事件</span></span><br><span class="line">      <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">      <span class="comment">//借助on函数绑定自定义事件</span></span><br><span class="line">      self.o.on.apply(self.o, <span class="built_in">arguments</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    pub: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">//发布事件</span></span><br><span class="line">      <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">      <span class="comment">//借助trigger函数模拟触发</span></span><br><span class="line">      self.o.trigger.apply(self.o, <span class="built_in">arguments</span>);</span><br><span class="line">    &#125;,</span><br><span class="line">    unsub: <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; <span class="comment">//取消订阅事件</span></span><br><span class="line">      <span class="keyword">var</span> self = <span class="keyword">this</span>;</span><br><span class="line">      <span class="comment">//借助off函数解除事件绑定</span></span><br><span class="line">      self.o.off.apply(self.o, <span class="built_in">arguments</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;)(jQuery, <span class="built_in">window</span>);</span><br></pre></td></tr></table></figure></p>
 <p>使用方法:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用方法</span></span><br><span class="line"><span class="comment">//订阅事件,'/test/ls'为事件名称(事件频道)</span></span><br><span class="line">EventCenter.sub(<span class="string">'/test/ls'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> event = <span class="built_in">arguments</span>[<span class="number">0</span>];</span><br><span class="line">  <span class="comment">//事件对象</span></span><br><span class="line">  <span class="built_in">console</span>.log(event);</span><br><span class="line">  <span class="comment">//函数传入参数</span></span><br><span class="line">  <span class="built_in">console</span>.log(<span class="built_in">arguments</span>);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">//点击发布事件按钮,触发事先订阅的事件</span></span><br><span class="line">$(<span class="string">'#btn01'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> argument = [<span class="string">'param01'</span>,<span class="string">'param02'</span>];</span><br><span class="line">  EventCenter.pub(<span class="string">'/test/ls'</span>, argument);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">//点击取消订阅按钮(事件取消后,点击发布事件按钮失效)</span></span><br><span class="line">$(<span class="string">'#btn02'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  EventCenter.unsub(<span class="string">'/test/ls'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<p>查看完整代码请<a href="https://github.com/iwuly/snippets/blob/gh-pages/example/observer/j/EventCenter.js" target="_blank" rel="external">猛戳这里</a>。</p>
+<p>查看完整代码请<a href="http://iwuly.com/snippets/?searchId=002">猛戳这里</a>。</p>
 <h4 id="4__u53C2_u8003_u8D44_u6599"><a href="#4__u53C2_u8003_u8D44_u6599" class="headerlink" title="4 参考资料"></a>4 参考资料</h4><p><a href="http://blog.csdn.net/tjvictor/article/details/5223309" target="_blank" rel="external">设计模式—订阅发布模式(Subscribe/Publish)</a><br><a href="http://baike.baidu.com/link?url=lWPrFN9sAPxLzfdn8eDsHMIIi8REuLlNi2jnPiH6Qvh3ufLexs0LTbmUUcglEzd3AofXovv6EHSOeQFtRT35_a" target="_blank" rel="external">百度百科-观察者模式</a><br><a href="http://www.cnblogs.com/li-peng/archive/2013/02/04/2892116.html" target="_blank" rel="external">设计模式：观察者模式</a><br><a href="http://shihuacivis.github.io/2015/09/10/20150910_subPub/" target="_blank" rel="external">Js实现基于发布/订阅机制的事件管理器（观察者模式）</a></p>
 ]]></content>
     <summary type="html">
@@ -171,10 +171,38 @@
     <link href="http://iwuly.com/2015/05/10/web-storage/"/>
     <id>http://iwuly.com/2015/05/10/web-storage/</id>
     <published>2015-05-10T07:15:23.000Z</published>
-    <updated>2016-02-04T07:25:00.000Z</updated>
-    <content type="html"></content>
+    <updated>2016-02-04T08:22:37.000Z</updated>
+    <content type="html"><![CDATA[<h4 id="u8BA4_u8BC6web_storage"><a href="#u8BA4_u8BC6web_storage" class="headerlink" title="认识web storage"></a>认识web storage</h4><p>web storage(web 存储)提供了一种方式，可以让web页面实现在客户端浏览器中以一键值对的形式在本地保存数据。在了解HTMl5的web存储之前，先来回顾一下HTML4中使用的Cookies。</p>
+<h4 id="Cookie_u5B58_u50A8_u673A_u5236_u7684_u4F18_u7F3A_u70B9"><a href="#Cookie_u5B58_u50A8_u673A_u5236_u7684_u4F18_u7F3A_u70B9" class="headerlink" title="Cookie存储机制的优缺点"></a>Cookie存储机制的优缺点</h4><p>Cookie是HTML4中在客户端存储简单用户信息的一种方式，它使用文本来存储信息，当有应用程序使用Cookie时，服务器端就会发送Cookie到客户端，客户端浏览器将保存改信息。下一次页面请求时，客户端浏览器就会把Cookies发送到服务器。Cookies最典型的应用是用来保存用户信息、用户设置、密码记忆等。</p>
+<p>使用Cookie有其优点，也有其缺陷，其优点主要表现在以下几个方面。</p>
+<ul>
+<li>简单易用</li>
+<li>浏览器负责发送数据</li>
+<li>浏览器自动管理不同站点的Cookie。但经过长期地使用，Cookie也越来也暴露出其先天的不足，主要有以下几点。</li>
+<li>使用简单的文本存储数据，所以Cookie的安全性很差。Cookie保存在客户端浏览器，很容易被黑客窃取。</li>
+<li>Cookie中存储的数据容量有限，其上限为4KB</li>
+<li>存储Cookie的数量有限，多数浏览器上限为30或50个，而IE6只支持每个域名存储20个Cookie，也有部分浏览器存储Cookie的数量高达300个。</li>
+<li>如果浏览器的安全配置为最高级别，则Cookie会失效。</li>
+<li>Cookie不适合大量数据的存储，因为Cookie会由每个队服务器的请求来传递，从而造成Cookie速度缓慢效率低下。</li>
+</ul>
+<p>就本地存储的大小而言，IE的userData最小也能支持640KB，IE8后已经支持DOM Storage，但是只支持IE。Flash到目前用得最多，其支持的容量为Cookie的25倍，即100KB。之后的Google推出Gears不限制容量，但是需要安装额外的插件。而HTML5现在支持的容量至少为5KB，对于本地存储而言已经足够使用，也有的浏览器会让用户自行设置。</p>
+<h4 id="u4E3A_u4EC0_u4E48_u8981_u7528web_storage"><a href="#u4E3A_u4EC0_u4E48_u8981_u7528web_storage" class="headerlink" title="为什么要用web storage"></a>为什么要用web storage</h4><p> HTML5的web storage提供了两种在客户端存储数据的方法，即localstorage和sessionStorage。<br> ＋ localStorage<br>    localStorage是一种没有时间限制的数据存储方式，可以将数据保存在客户端的硬盘或其他存储器，<br>存储时间可以是一天、两天、几周或几年，浏览器的关闭并不意味着数据也随之流失，当再次打开浏览器时，依然可以访问这些数据。localStorage用于持久化的本地存储，除非主动删除数据，否则数据时永远不会过期的。<br> ＋ sessionStorage<br>sessionStorage指的是针对一个seesion的数据存储，即将数据保存在session对象中。web中的session指的是用户在浏览某个网站时，从进入网站到关闭浏览器所经过的这段时间，可以称为用户与浏览器进行交互的“会话时间”。session 对象用来保存这个时间段内所有要保存的数据，当用户关闭浏览器后，这些数据会被删除。<br>sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问，并且当会话结束后数据也随之销毁。因此sessionStorage 不是一种持久化的本地存储，仅仅是会话级别的存储。<br>从以上介绍可以看出，localStorage可以永久保存数据，而sessionStroge只能暂时保存数据，这是两者之间的重要区别，在具体使用时应该注意。<br>web storage 存储机制比传统的Cookie更大强大，弥补了Cookies的诸多缺点，主要在以下两个方面做了加强。第一，web storage 提供了易于使用的API接口，只需要设置键值即可使用，简单方便。第二，在存储容量方面可根据用户分配的磁盘配额进行存储能够在每个用户域存储5MB～10MB的内容，用户不仅可以存储session，还可以存储许多信息，如设置偏好、本地化的数据和离线数据等。<br>web storage 还提供了JavaScript对编程的接口，开发者可以使用JavaScript客户端脚本实现许多以前只能在服务器端才能完成的工作。</p>
+<p>web storage 的优缺点<br>数据的本地存储一直是以本地客户端为主，因为本地客户端应用相对于web存储（web Storage）的优势显而易见。在HTML5之前，web应用的本地存储不能满足大量与复杂数据的存储的需要。HTML5在web存储方面所做的重大改进，包括支持在客户端本地建立一个数据库，这是对HTML4中的Cookie存储机制的改善和提高，其用用会越来越广泛。</p>
+<ul>
+<li>存储空间：存储空间要更大。IE8下每个独立的存储空间为10M，其他浏览器实现略有不同，但都比Cookie要大很多。</li>
+<li>服务器：存储内容不会发送到服务器。当设置了Cookies后，Cookie的内容会随着请求一并发送到服务器，这对于本地存储的数据是一种带宽浪费，而web storage 中的数据则仅仅存在于本地，不会与服务器发生任何交互。</li>
+<li>接口：更多丰富易用的接口。web storage 提供了一套更为丰富的接口，使得数据操作更为简便。</li>
+<li>存储空间:独立的存储空间。每个域（包括子域）都有独立的存储空间，各个存储空间是完全独立的，因此不会造成数据混乱。</li>
+</ul>
+<p>web storage 的缺点主要集中在其安全性方面，具体体现在以下两点： </p>
+<ul>
+<li>浏览器会为每个域分配独立的存储空间，即脚本在域A中是无法访问域B中的存储空间的，但是浏览器缺不会检查脚本所在的域与当前域是否相同，即在域B中嵌入域A中的脚本依然可以访问域B中的数据。</li>
+<li>存储在恩地的数据未加密而且永远不会过期，极易造成隐私泄露。</li>
+<li>浏览器支持概述<br>在HTML5的各项特性中，web storage的浏览器支持度是非常好的。其实目前所有主流浏览器版本都在一定程度上支持web storage。<br>HTMl5的web storage 因其广泛的支持度而成为web应用中最安全的API之一。事实证明各浏览器在API方面的实现基本一致。存在一定的兼容性问题，但不影响正常的使用。</li>
+</ul>
+]]></content>
     <summary type="html">
-    
+    <![CDATA[<h4 id="u8BA4_u8BC6web_storage"><a href="#u8BA4_u8BC6web_storage" class="headerlink" title="认识web storage"></a>认识web storage</h4><p>web stor]]>
     </summary>
     
       <category term="local storage" scheme="http://iwuly.com/tags/local-storage/"/>

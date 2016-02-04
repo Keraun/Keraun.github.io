@@ -4,16 +4,18 @@
 
     
   <url>
-    <loc>http://iwuly.com/2016/01/28/pit-in-mobile-development/</loc>
-    <lastmod>2016-02-04T07:25:44.000Z</lastmod>
+    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
+    <lastmod>2016-02-04T08:25:19.000Z</lastmod>
     <data>
         <display>
-        <title>移动端开发中遇到的那些坑</title>
-        <pubTime>2016-01-28T04:02:43.000Z</pubTime>
+        <title>Study notes: 设计模式之观察者模式</title>
+        <pubTime>2016-01-03T15:27:09.000Z</pubTime>
         
-        <tag>mobile</tag>
+        <tag>发布/订阅者模式</tag>
          
-        <tag>移动端</tag>
+        <tag>观察者模式</tag>
+         
+        <tag>设计模式</tag>
          
          
            
@@ -24,7 +26,7 @@
     
   <url>
     <loc>http://iwuly.com/2015/05/10/web-storage/</loc>
-    <lastmod>2016-02-04T07:25:00.000Z</lastmod>
+    <lastmod>2016-02-04T08:22:37.000Z</lastmod>
     <data>
         <display>
         <title>Study notes: 本地存储和离线存储</title>
@@ -35,6 +37,25 @@
         <tag>session storage</tag>
          
         <tag>web storage</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://iwuly.com/2016/01/28/pit-in-mobile-development/</loc>
+    <lastmod>2016-02-04T07:25:44.000Z</lastmod>
+    <data>
+        <display>
+        <title>移动端开发中遇到的那些坑</title>
+        <pubTime>2016-01-28T04:02:43.000Z</pubTime>
+        
+        <tag>mobile</tag>
+         
+        <tag>移动端</tag>
          
          
            
@@ -73,27 +94,6 @@
         <tag>移动端</tag>
          
         <tag>适配方案</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
-    <lastmod>2016-02-04T04:41:44.000Z</lastmod>
-    <data>
-        <display>
-        <title>Study notes: 设计模式之观察者模式</title>
-        <pubTime>2016-01-03T15:27:09.000Z</pubTime>
-        
-        <tag>发布/订阅者模式</tag>
-         
-        <tag>观察者模式</tag>
-         
-        <tag>设计模式</tag>
          
          
            
