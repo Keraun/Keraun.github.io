@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我们的征途是星辰大海]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://iwuly.com/"/>
-  <updated>2016-02-04T03:58:40.000Z</updated>
+  <updated>2016-02-04T04:02:43.000Z</updated>
   <id>http://iwuly.com/</id>
   
   <author>
@@ -15,16 +15,29 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[pit in mobile development]]></title>
+    <link href="http://iwuly.com/2016/02/04/pit-in-mobile-development/"/>
+    <id>http://iwuly.com/2016/02/04/pit-in-mobile-development/</id>
+    <published>2016-02-04T04:02:43.000Z</published>
+    <updated>2016-02-04T04:02:43.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Study notes: 设计模式之观察者模式]]></title>
     <link href="http://iwuly.com/2016/02/03/Design-Patterns-Observer/"/>
     <id>http://iwuly.com/2016/02/03/Design-Patterns-Observer/</id>
     <published>2016-02-03T15:27:09.000Z</published>
-    <updated>2016-02-04T03:58:40.000Z</updated>
+    <updated>2016-02-04T04:04:11.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>学习观察者模式的时候发现自己有很多不懂,主要是平时项目没有用到,所以比较陌生。工作之余抓着间隙虚心向同事讨教了几招,整理了一下自己的近期学习笔记。如有纰漏，欢迎留言&amp;评论~~</p>
 </blockquote>
   <a id="more"></a>
-<h4 id="1__u5B66_u4E60_u573A_u666F"><a href="#1__u5B66_u4E60_u573A_u666F" class="headerlink" title="1 学习场景"></a>1 学习场景</h4><p>  了解观察者模式,咱们可以先看看这段代码。<br>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#btn'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">//回调函数</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<h4 id="1__u4E1A_u52A1_u573A_u666F"><a href="#1__u4E1A_u52A1_u573A_u666F" class="headerlink" title="1 业务场景"></a>1 业务场景</h4><p>  了解观察者模式,咱们可以先看看这段代码。<br>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#btn'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">//回调函数</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <p>  使用jQuery的同学对这段代码都很熟悉吧~~<br>  监听#btn的click事件并给予回调。很早的时候,业务逻辑我是直接写在回调函数里的。然而业务变复杂后,<br>  这种写法的短板也就出来了,<strong>程序结构不清晰,耦合度高,代码重用性低</strong>等等。后来我尝试了这样：<br>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">//业务逻辑</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">B</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">//业务逻辑</span></span><br><span class="line">&#125;</span><br><span class="line">$(<span class="string">'#btn1'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  A();</span><br><span class="line">  B();</span><br><span class="line">  ...</span><br><span class="line">&#125;);</span><br><span class="line">$(<span class="string">'#btn2'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  A();</span><br><span class="line">  B();</span><br><span class="line">  ...</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <p>  剥离业务逻辑到外部函数,然后在回调函数里调用外部函数。同时,剥离出来的代码其他地方也能调用。<br>  但是这样还不是最完美的,当类似 function A(), function B()的公共函数变得很多时,程序就变得很难管理,<br>  所以我们就需要一个<strong>事件管理中心(观察者模式)</strong>对这些方法进行<strong>统一管理(分类、订阅、发布、销毁)</strong>。</p>
 <h4 id="2__u89C2_u5BDF_u8005_u6A21_u5F0F_u6982_u8981"><a href="#2__u89C2_u5BDF_u8005_u6A21_u5F0F_u6982_u8981" class="headerlink" title="2 观察者模式概要"></a>2 观察者模式概要</h4><h5 id="2-1__u4EC0_u4E48_u662F_u89C2_u5BDF_u8005_u6A21_u5F0F"><a href="#2-1__u4EC0_u4E48_u662F_u89C2_u5BDF_u8005_u6A21_u5F0F" class="headerlink" title="2.1 什么是观察者模式"></a>2.1 什么是观察者模式</h5><p>观察者模式又叫<strong>发布订阅模式(Publish/Subscribe)</strong>,它定义了一种一对多的关系,让多个观察者对象同时监听同一主题对象，这个主题对象的状态发生变化时，就会通知所有的观察者对象，使得它们能够自动更新自己。</p>
