@@ -4,6 +4,27 @@
 
     
   <url>
+    <loc>http://iwuly.com/2015/05/10/web-storage/</loc>
+    <lastmod>2016-02-04T08:26:17.000Z</lastmod>
+    <data>
+        <display>
+        <title>Study notes: 本地存储和离线存储</title>
+        <pubTime>2015-05-10T07:15:23.000Z</pubTime>
+        
+        <tag>local storage</tag>
+         
+        <tag>session storage</tag>
+         
+        <tag>web storage</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
     <lastmod>2016-02-04T08:25:19.000Z</lastmod>
     <data>
@@ -16,27 +37,6 @@
         <tag>观察者模式</tag>
          
         <tag>设计模式</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://iwuly.com/2015/05/10/web-storage/</loc>
-    <lastmod>2016-02-04T08:22:37.000Z</lastmod>
-    <data>
-        <display>
-        <title>Study notes: 本地存储和离线存储</title>
-        <pubTime>2015-05-10T07:15:23.000Z</pubTime>
-        
-        <tag>local storage</tag>
-         
-        <tag>session storage</tag>
-         
-        <tag>web storage</tag>
          
          
            

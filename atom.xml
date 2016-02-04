@@ -171,8 +171,8 @@
     <link href="http://iwuly.com/2015/05/10/web-storage/"/>
     <id>http://iwuly.com/2015/05/10/web-storage/</id>
     <published>2015-05-10T07:15:23.000Z</published>
-    <updated>2016-02-04T08:22:37.000Z</updated>
-    <content type="html"><![CDATA[<h4 id="u8BA4_u8BC6web_storage"><a href="#u8BA4_u8BC6web_storage" class="headerlink" title="认识web storage"></a>认识web storage</h4><p>web storage(web 存储)提供了一种方式，可以让web页面实现在客户端浏览器中以一键值对的形式在本地保存数据。在了解HTMl5的web存储之前，先来回顾一下HTML4中使用的Cookies。</p>
+    <updated>2016-02-04T08:26:17.000Z</updated>
+    <content type="html"><![CDATA[<h4 id="u8BA4_u8BC6web_storage"><a href="#u8BA4_u8BC6web_storage" class="headerlink" title="认识web storage"></a>认识web storage</h4><p>web storage(web 存储)提供了一种方式，可以让web页面实现在客户端浏览器中以一键值对的形式在本地保存数据。在了解HTMl5的web存储之前，先来回顾一下HTML4中使用的Cookies。<br><a id="more"></a></p>
 <h4 id="Cookie_u5B58_u50A8_u673A_u5236_u7684_u4F18_u7F3A_u70B9"><a href="#Cookie_u5B58_u50A8_u673A_u5236_u7684_u4F18_u7F3A_u70B9" class="headerlink" title="Cookie存储机制的优缺点"></a>Cookie存储机制的优缺点</h4><p>Cookie是HTML4中在客户端存储简单用户信息的一种方式，它使用文本来存储信息，当有应用程序使用Cookie时，服务器端就会发送Cookie到客户端，客户端浏览器将保存改信息。下一次页面请求时，客户端浏览器就会把Cookies发送到服务器。Cookies最典型的应用是用来保存用户信息、用户设置、密码记忆等。</p>
 <p>使用Cookie有其优点，也有其缺陷，其优点主要表现在以下几个方面。</p>
 <ul>
@@ -202,7 +202,8 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h4 id="u8BA4_u8BC6web_storage"><a href="#u8BA4_u8BC6web_storage" class="headerlink" title="认识web storage"></a>认识web storage</h4><p>web stor]]>
+    <![CDATA[<h4 id="u8BA4_u8BC6web_storage"><a href="#u8BA4_u8BC6web_storage" class="headerlink" title="认识web storage"></a>认识web storage</h4><p>web storage(web 存储)提供了一种方式，可以让web页面实现在客户端浏览器中以一键值对的形式在本地保存数据。在了解HTMl5的web存储之前，先来回顾一下HTML4中使用的Cookies。<br>]]>
+    
     </summary>
     
       <category term="local storage" scheme="http://iwuly.com/tags/local-storage/"/>
