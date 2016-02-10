@@ -4,8 +4,46 @@
 
     
   <url>
+    <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
+    <lastmod>2016-02-10T11:00:27.000Z</lastmod>
+    <data>
+        <display>
+        <title>Study notes: web 实时通信与跨文档通信</title>
+        <pubTime>2016-01-20T07:20:07.000Z</pubTime>
+        
+        <tag>web 实时通信</tag>
+         
+        <tag>跨域</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
+    <lastmod>2016-02-10T10:39:50.000Z</lastmod>
+    <data>
+        <display>
+        <title>Study notes: Ajax</title>
+        <pubTime>2015-02-01T13:05:54.000Z</pubTime>
+        
+        <tag>Ajax</tag>
+         
+        <tag>javaScript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://iwuly.com/2015/05/10/web-storage/</loc>
-    <lastmod>2016-02-04T08:26:17.000Z</lastmod>
+    <lastmod>2016-02-09T12:31:47.000Z</lastmod>
     <data>
         <display>
         <title>Study notes: 本地存储和离线存储</title>
@@ -16,6 +54,25 @@
         <tag>session storage</tag>
          
         <tag>web storage</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://iwuly.com/2016/02/04/Mongodb001/</loc>
+    <lastmod>2016-02-04T09:34:56.000Z</lastmod>
+    <data>
+        <display>
+        <title>Mongodb 概述与安装</title>
+        <pubTime>2016-02-04T09:17:16.000Z</pubTime>
+        
+        <tag>Mongodb</tag>
+         
+        <tag>NoSQL</tag>
          
          
            
@@ -57,21 +114,6 @@
          
         <tag>移动端</tag>
          
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://iwuly.com/2015/04/20/web-socket/</loc>
-    <lastmod>2016-02-04T07:24:33.000Z</lastmod>
-    <data>
-        <display>
-        <title>Study notes: web 实时通信与跨文档通信</title>
-        <pubTime>2015-04-20T07:20:07.000Z</pubTime>
-        
          
            
         </display>
@@ -122,25 +164,6 @@
 
     
     
-    
-  <url>
-    <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
-    <lastmod>2016-01-09T12:20:10.000Z</lastmod>
-    <data>
-        <display>
-        <title>Study notes: Ajax</title>
-        <pubTime>2015-02-01T13:05:54.000Z</pubTime>
-        
-        <tag>Ajax</tag>
-         
-        <tag>javaScript</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>

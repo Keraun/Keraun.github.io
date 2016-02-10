@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
+    <lastmod>2016-02-10T11:00:27.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
+    <lastmod>2016-02-10T10:39:50.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://iwuly.com/2015/05/10/web-storage/</loc>
-    <lastmod>2016-02-04T08:26:17.000Z</lastmod>
+    <lastmod>2016-02-09T12:31:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/2016/02/04/Mongodb001/</loc>
+    <lastmod>2016-02-04T09:34:56.000Z</lastmod>
   </url>
   
   <url>
@@ -14,11 +29,6 @@
   <url>
     <loc>http://iwuly.com/2016/01/28/pit-in-mobile-development/</loc>
     <lastmod>2016-02-04T07:25:44.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/2015/04/20/web-socket/</loc>
-    <lastmod>2016-02-04T07:24:33.000Z</lastmod>
   </url>
   
   <url>
@@ -39,11 +49,6 @@
   <url>
     <loc>http://iwuly.com/about/index.html</loc>
     <lastmod>2016-01-10T08:01:38.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
-    <lastmod>2016-01-09T12:20:10.000Z</lastmod>
   </url>
   
   <url>

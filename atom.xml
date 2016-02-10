@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我们的征途是星辰大海]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://iwuly.com/"/>
-  <updated>2016-02-04T07:24:14.000Z</updated>
+  <updated>2016-02-04T09:34:56.000Z</updated>
   <id>http://iwuly.com/</id>
   
   <author>
@@ -13,6 +13,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Mongodb 概述与安装]]></title>
+    <link href="http://iwuly.com/2016/02/04/Mongodb001/"/>
+    <id>http://iwuly.com/2016/02/04/Mongodb001/</id>
+    <published>2016-02-04T09:17:16.000Z</published>
+    <updated>2016-02-04T09:34:56.000Z</updated>
+    <content type="html"><![CDATA[<h4 id="NoSQL_u6570_u636E_u5E93_u7684_u6982_u8FF0_uFF0D_u7279_u70B9"><a href="#NoSQL_u6570_u636E_u5E93_u7684_u6982_u8FF0_uFF0D_u7279_u70B9" class="headerlink" title="NoSQL数据库的概述－特点"></a>NoSQL数据库的概述－特点</h4><ol>
+<li>模式自由<br> 不需要定义表结构,数据表中的每条记录都可能有不同的属性和格式</li>
+<li>逆范式化<br> 不遵循范式要求,去掉完整性约束，减少表之间的的依赖</li>
+<li>多分区存储<br> 数据进行分区,将记录分散到多个节点上</li>
+<li>弹性可扩展<br> 可在系统运行过程中，动态增加和删除节点，数据自动平衡移动。</li>
+<li>多副本异步复制<br> 数据快速写入一个节点，其余节点通过读取写入节点日志来实现异步复制</li>
+<li>软事务<br> 不能完全满足事务的ACID特性，保证事务的最终一致性。</li>
+</ol>
+<h4 id="CAP_u7406_u8BBA"><a href="#CAP_u7406_u8BBA" class="headerlink" title="CAP理论"></a>CAP理论</h4><h4 id="u7279_u70B9"><a href="#u7279_u70B9" class="headerlink" title="特点"></a>特点</h4>]]></content>
+    <summary type="html">
+    <![CDATA[<h4 id="NoSQL_u6570_u636E_u5E93_u7684_u6982_u8FF0_uFF0D_u7279_u70B9"><a href="#NoSQL_u6570_u636E_u5E93_u7684_u6982_u8FF0_uFF0D_u7279_u70B9" ]]>
+    </summary>
+    
+      <category term="Mongodb" scheme="http://iwuly.com/tags/Mongodb/"/>
+    
+      <category term="NoSQL" scheme="http://iwuly.com/tags/NoSQL/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[移动端适配方案hotcss的实战与应用]]></title>
@@ -49,6 +74,136 @@
       <category term="mobile" scheme="http://iwuly.com/tags/mobile/"/>
     
       <category term="移动端" scheme="http://iwuly.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Study notes: web 实时通信与跨文档通信]]></title>
+    <link href="http://iwuly.com/2016/01/20/web-socket/"/>
+    <id>http://iwuly.com/2016/01/20/web-socket/</id>
+    <published>2016-01-20T07:20:07.000Z</published>
+    <updated>2016-02-10T11:00:27.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,<br>功能类似于微信朋友圈(能发状态、点赞、评论&amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.</p>
+</blockquote>
+<h4 id="1__u4EC0_u4E48_u662F_u5B9E_u65F6_u901A_u4FE1"><a href="#1__u4EC0_u4E48_u662F_u5B9E_u65F6_u901A_u4FE1" class="headerlink" title="1 什么是实时通信"></a>1 什么是实时通信</h4><p><strong>实时通信:</strong> 在网络连接的时候,需要及时的把服务端上的消息回传到消息。比如在线游戏、微博、电子邮件等。</p>
+<a id="more"></a>
+<p><strong>实时通信分类:</strong></p>
+<ol>
+<li>Pull技术,轮询（polling）</li>
+<li>Push,反向Ajax(Reverse Ajax)或者叫Comet.<br> 2.1 长轮询(Long Polling)<pre><code>XHR Long Polling （ajax方式）,
+Jsonp Long Polling （jsonp方式）
+</code></pre> 2.2 流推送(Comet Streaming)<pre><code>Multi-part XMLHttpRequest,
+Hidden IFrame(Forever IFrames)
+</code></pre></li>
+<li>WebSocket</li>
+</ol>
+<hr>
+<h4 id="2__u5B9E_u65F6web_u7684_u6F14_u53D8"><a href="#2__u5B9E_u65F6web_u7684_u6F14_u53D8" class="headerlink" title="2 实时web的演变"></a>2 实时web的演变</h4><h5 id="Ajax_u76DB_u884C_u4E4B_u524D"><a href="#Ajax_u76DB_u884C_u4E4B_u524D" class="headerlink" title="Ajax盛行之前"></a>Ajax盛行之前</h5><p><strong>自动刷新整页使页面呈现最新内容:</strong></p>
+<ul>
+<li>设置meta页面自动刷新机制</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">meta</span>  <span class="attribute">http-equiv</span>=<span class="value">“refresh”</span>  <span class="attribute">content</span>=<span class="value">“20;url=xxx”</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>定时修改Location.href</li>
+</ul>
+<p><strong>页面刷新缺点:</strong></p>
+<ul>
+<li>用户体验极差(每隔一段时间就刷新页面)</li>
+<li>流量浪费(整个页面刷新)</li>
+</ul>
+<h5 id="2-1__u8F6E_u8BE2_uFF08polling_uFF09"><a href="#2-1__u8F6E_u8BE2_uFF08polling_uFF09" class="headerlink" title="2.1 轮询（polling）"></a>2.1 轮询（polling）</h5><p><strong>原理:</strong>客户端定时轮询请求(setInterval)，服务器端立刻返回.</p>
+<p>示例代码:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">interval = setInterval(polling, <span class="number">1000</span>);<span class="comment">//1000为心跳值，每隔1s请求</span></span><br></pre></td></tr></table></figure></p>
+<ul>
+<li><strong>优点</strong><br>  简单易用,容易实现<br>  <strong>短链接</strong>(简单的ajax请求,可以使get、post，也可以是jsonp)<br>  服务器处理方便<br>  支持跨域(使用jsonp时)<br>  所有浏览器都支持<br>  每次请求,立刻返回</li>
+<li><strong>缺点</strong><br>  可能会出现延迟(每隔几秒模拟,并不能保证是实时消息)<br>  浪费流量(并不知道服务器有木有最新数据,要不断向服务器请求)<br>  建立大量链接,(用户数越多与服务器连接的请求也越多,服务器并发量大,处理变慢)</li>
+</ul>
+<blockquote>
+<p>微博未读微博数和未读消息（评论，@）就是用polling实现的。<br>应用场景：对实时性要求不高的应用，如新微博提示，评论提示，回复提示等。</p>
+</blockquote>
+<h5 id="2-2_Comet_uFF1A_u57FA_u4E8EHTTP_u957F_u8FDE_u63A5_u7684_u201C_u670D_u52A1_u5668_u63A8_u201D_u6280_u672F"><a href="#2-2_Comet_uFF1A_u57FA_u4E8EHTTP_u957F_u8FDE_u63A5_u7684_u201C_u670D_u52A1_u5668_u63A8_u201D_u6280_u672F" class="headerlink" title="2.2 Comet：基于HTTP长连接的“服务器推”技术"></a>2.2 Comet：基于HTTP长连接的“服务器推”技术</h5><p>(也有人叫做反向ajax)</p>
+<p><strong>原理:</strong>客户端发起连接,服务器端会阻塞请求（服务器端hold网络连接）直到有数据传递或超时（心跳时间）才返回.</p>
+<p>实现方式主要有2种:<strong>长轮询(Long Polling)</strong>和 <strong>流推送(Comet Streaming)</strong></p>
+<p>两种实现方式:</p>
+<p><strong>长轮询（long polling）</strong></p>
+<p><strong>1 XHR Long Polling （ajax方式）</strong></p>
+<ul>
+<li>原理:客户端发起一个XHR ajax request,服务器端会阻塞请求直到有数据传递或超时才返回<br>客户端收到response之后马上再发起一个新的request，周而复始。(当客户端处理接收的数据、重新建立连接时，服务器端可能有新的数据到达；这些信息会被服务器端保存直到客户端重新建立连接，客户端会一次把当前服务器端所有的信息取回。)</li>
+</ul>
+<p><strong>2 Jsonp Long Polling （jsonp方式）</strong></p>
+<ul>
+<li>原理:跟XHR Long Polling类似，只是结合long polling和jsonp，用来支持跨域（cross-domain）请求。</li>
+</ul>
+<p>连接需要后端靠hold住（让进程休眠）,对服务器端的架构考验比较大</p>
+<p><strong>优点：</strong>减少轮询，低延迟, 各大浏览器均支持;<br><strong>缺点：</strong>服务器需要hold住大量connection,ajax方式不支持跨域.</p>
+<p>ps:在这种长轮询方式下，客户端是在 XMLHttpRequest 的 readystate 为 4（即数据传输结束）时调用回调函数，进行信息处理。当 readystate 为 4 时，数据传输结束，连接已经关闭。Mozilla Firefox 提供了对 Streaming AJAX 的支持，<br>即 readystate 为 3 时（数据仍在传输中），客户端可以读取数据,从而无须关闭连接，就能读取处理服务器端返回的信息.IE 在 readystate 为 3 时,不能读取服务器返回的数据,目前 IE 不支持基于 Streaming AJAX。</p>
+<blockquote>
+<p>微博私信提示就是用Jsonp Long Polling实现。<br>Long Polling的应用场景：对实时性要求较高和浏览器覆盖面广的应用，如私信等一些简单即时聊天应用。</p>
+</blockquote>
+<p><strong>流推送(comet streaming )</strong></p>
+<ul>
+<li>Multi-part XMLHttpRequest</li>
+<li>Hidden IFrame(Forever IFrames)</li>
+</ul>
+<p><strong>1 Multi-part XMLHttpRequest</strong></p>
+<p><strong>优点：</strong>客户端一次连接，服务器数据可多次推送。<br><strong>缺点：</strong>并非所有的浏览器都支持 multi-part 标志。</p>
+<p>－－－－－对他不是很了解，欢迎在大家在评论区补充－－－－－－</p>
+<p><strong>2 Hidden IFrame(Forever IFrames)</strong><br>建立一个隐藏的iframe，利用iframe建立长连接。<br>(iframe src 属性设为对一个长连接的请求，服务器端就能源源不断地往客户端输入数据。)</p>
+<p><strong>优点：</strong>客户端一次连接，服务器数据可多次推送。几乎所有支持iframe 的浏览器上都可用。<br><strong>缺点：</strong>不可跨域，错误处理可控性不强  </p>
+<p>流推送的应用场景：实时监控系统，即时聊天</p>
+<hr>
+<h5 id="http_u5B9E_u65F6_u901A_u4FE1_u7F3A_u9677"><a href="#http_u5B9E_u65F6_u901A_u4FE1_u7F3A_u9677" class="headerlink" title="http实时通信缺陷"></a>http实时通信缺陷</h5><p>http通信特点：</p>
+<ul>
+<li>无状态连接（需要对每个客户端的连接维持）</li>
+<li>单向通信</li>
+<li>每个请求都包括header信息（cookie, Cache-Control,content-type, Expires）</li>
+</ul>
+<ul>
+<li>服务器被迫为每个客户端使用一些不同的底层TCP连接： </li>
+<li>一个用于发送信息到客户端和一个新的用于每个传入消息。</li>
+<li>线路层协议有较高的开销，因为每个客户端-服务器消息都有一个HTTP头信息。</li>
+<li>客户端脚本被迫维护一个传出的连接到传入的连接的映射来跟踪回复。</li>
+</ul>
+<h4 id="3_websocket_u4ECB_u7ECD"><a href="#3_websocket_u4ECB_u7ECD" class="headerlink" title="3 websocket介绍"></a>3 websocket介绍</h4><h5 id="3-1_websocket_u7684_u8BDE_u751F"><a href="#3-1_websocket_u7684_u8BDE_u751F" class="headerlink" title="3.1 websocket的诞生"></a>3.1 websocket的诞生</h5><p>定义了一个浏览器和服务器之间的全双工的单一的socket连接取代现有的HTTP作为传输层的双向通信技术W3C将其纳入规范，写入HTML5版本</p>
+<h5 id="3-2_websocket_u63A5_u53E3"><a href="#3-2_websocket_u63A5_u53E3" class="headerlink" title="3.2 websocket接口"></a>3.2 websocket接口</h5><p>onopen 在WS客户端和WS服务器建立连接成功后调用<br>onmessage 在WS服务器给WS客户端发送数据时调用<br>onerror 如果连接失败，发送、接收数据失败或者处理数据出现错误，则会被调用<br>onclose 在WS客户端接收到WS服务器关闭时进行调用</p>
+<h5 id="3-3_websocket__u5B9E_u4F8B"><a href="#3-3_websocket__u5B9E_u4F8B" class="headerlink" title="3.3 websocket 实例"></a>3.3 websocket 实例</h5><p><strong>浏览器端实现</strong></p>
+<ol>
+<li>Websocket 实例化</li>
+<li>定义open\message\cloes\error事件</li>
+</ol>
+<p><strong>服务端(nodejs)实现</strong></p>
+<ol>
+<li>构建websocket服务器</li>
+<li>处理connection事件，实现与客户端通信</li>
+</ol>
+<p><strong>思考：如何做技术选型?</strong></p>
+<hr>
+<h4 id="4__u8DE8_u6587_u6863_u901A_u4FE1_u5B9E_u73B0_u65B9_u5F0F"><a href="#4__u8DE8_u6587_u6863_u901A_u4FE1_u5B9E_u73B0_u65B9_u5F0F" class="headerlink" title="4 跨文档通信实现方式"></a>4 跨文档通信实现方式</h4><h5 id="4-1_Window_u547D_u540D_u7A7A_u95F4_u8FDB_u884C_u4F20_u9012_uFF1A"><a href="#4-1_Window_u547D_u540D_u7A7A_u95F4_u8FDB_u884C_u4F20_u9012_uFF1A" class="headerlink" title="4.1 Window命名空间进行传递："></a>4.1 Window命名空间进行传递：</h5><p>window.name = “hello”;</p>
+<p>优点：简单<br>缺点：</p>
+<ul>
+<li>无法跨域</li>
+<li>无法实现不同窗体之间的通信</li>
+</ul>
+<p>示例代码<a href="http://iwuly.com/snippets/?searchId=003">window.name实现的跨域数据传输</a></p>
+<h5 id="4-2_postmessage"><a href="#4-2_postmessage" class="headerlink" title="4.2 postmessage"></a>4.2 postmessage</h5><p>信差大使——postmessage: 监听message事件，通过event对象获取消息</p>
+<p>data   包含任意字符串数据，由原始脚本发送<br>origin 一个字符串，包含原始文档的方案、域名以及端口(如：<a href="http://domain.example:80" target="_blank" rel="external">http://domain.example:80</a>)<br>lastEventId 一个字符串，包含了当前的消息事件的唯一标识符。<br>source 原始文件的窗口的引用。更确切地说，它是一个WindowProxy对象。<br>ports  一个数组，包含任何MessagePort对象发送消息。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> messageHandle = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="number">1</span>);</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(<span class="built_in">window</span>.addEventListener) &#123;</span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">'message'</span>, messageHandle, <span class="literal">false</span>);</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">window</span>.attachEvent) &#123;<span class="comment">//IE的写法</span></span><br><span class="line">    <span class="built_in">window</span>.attachEvent(<span class="string">'onmessage'</span>,messageHandle);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.parent.frames[<span class="number">1</span>].postMessage(message,<span class="string">'*'</span>);</span><br></pre></td></tr></table></figure>
+<p>示例代码请<a href="http://iwuly.com/snippets/?searchId=004">postMessage跨文档实现方案</a></p>
+<hr>
+<h4 id="5__u53C2_u8003_u6587_u6863"><a href="#5__u53C2_u8003_u6587_u6863" class="headerlink" title="5 参考文档"></a>5 参考文档</h4><p><a href="http://www.iqiyi.com/w_19rs59narl.html?t=1454829077177#vfrm=8-8-0-3" target="_blank" rel="external">HTML5即时通讯</a><br><a href="http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m2" target="_blank" rel="external">JavaScript跨域总结与解决办法</a><br><a href="http://blog.csdn.net/z69183787/article/details/19191385" target="_blank" rel="external">JSONP原理优缺点</a><br><a href="http://blog.phpha.com/backup/archives/1668.html" target="_blank" rel="external">基于WEB的实时通信方案</a><br><a href="http://blog.csdn.net/lihongxun945/article/details/37830667" target="_blank" rel="external">http://blog.csdn.net/lihongxun945/article/details/37830667</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,<br>功能类似于微信朋友圈(能发状态、点赞、评论&amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.</p>
+</blockquote>
+<h4 id="1__u4EC0_u4E48_u662F_u5B9E_u65F6_u901A_u4FE1"><a href="#1__u4EC0_u4E48_u662F_u5B9E_u65F6_u901A_u4FE1" class="headerlink" title="1 什么是实时通信"></a>1 什么是实时通信</h4><p><strong>实时通信:</strong> 在网络连接的时候,需要及时的把服务端上的消息回传到消息。比如在线游戏、微博、电子邮件等。</p>]]>
+    
+    </summary>
+    
+      <category term="web 实时通信" scheme="http://iwuly.com/tags/web-%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1/"/>
+    
+      <category term="跨域" scheme="http://iwuly.com/tags/%E8%B7%A8%E5%9F%9F/"/>
     
   </entry>
   
@@ -171,7 +326,7 @@
     <link href="http://iwuly.com/2015/05/10/web-storage/"/>
     <id>http://iwuly.com/2015/05/10/web-storage/</id>
     <published>2015-05-10T07:15:23.000Z</published>
-    <updated>2016-02-04T08:26:17.000Z</updated>
+    <updated>2016-02-09T12:31:47.000Z</updated>
     <content type="html"><![CDATA[<h4 id="u8BA4_u8BC6web_storage"><a href="#u8BA4_u8BC6web_storage" class="headerlink" title="认识web storage"></a>认识web storage</h4><p>web storage(web 存储)提供了一种方式，可以让web页面实现在客户端浏览器中以一键值对的形式在本地保存数据。在了解HTMl5的web存储之前，先来回顾一下HTML4中使用的Cookies。<br><a id="more"></a></p>
 <h4 id="Cookie_u5B58_u50A8_u673A_u5236_u7684_u4F18_u7F3A_u70B9"><a href="#Cookie_u5B58_u50A8_u673A_u5236_u7684_u4F18_u7F3A_u70B9" class="headerlink" title="Cookie存储机制的优缺点"></a>Cookie存储机制的优缺点</h4><p>Cookie是HTML4中在客户端存储简单用户信息的一种方式，它使用文本来存储信息，当有应用程序使用Cookie时，服务器端就会发送Cookie到客户端，客户端浏览器将保存改信息。下一次页面请求时，客户端浏览器就会把Cookies发送到服务器。Cookies最典型的应用是用来保存用户信息、用户设置、密码记忆等。</p>
 <p>使用Cookie有其优点，也有其缺陷，其优点主要表现在以下几个方面。</p>
@@ -215,24 +370,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Study notes: web 实时通信与跨文档通信]]></title>
-    <link href="http://iwuly.com/2015/04/20/web-socket/"/>
-    <id>http://iwuly.com/2015/04/20/web-socket/</id>
-    <published>2015-04-20T07:20:07.000Z</published>
-    <updated>2016-02-04T07:24:33.000Z</updated>
-    <content type="html"></content>
-    <summary type="html">
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[Study notes: Ajax]]></title>
     <link href="http://iwuly.com/2015/02/01/ajax001/"/>
     <id>http://iwuly.com/2015/02/01/ajax001/</id>
     <published>2015-02-01T13:05:54.000Z</published>
-    <updated>2016-01-09T12:20:10.000Z</updated>
+    <updated>2016-02-10T10:39:50.000Z</updated>
     <content type="html"><![CDATA[<h4 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h4><blockquote>
 <p>前段时间群里做知识分享,<a href="http://www.cnblogs.com/lvdabao/" target="_blank" rel="external">大豹</a>老师分享了他对Ajax的一些心得体会,当时听的比较入迷,整理了一些笔记,希望对大家有帮助。</p>
 </blockquote>
@@ -273,7 +415,7 @@
 <p><strong>缺陷：</strong><br> 1.毁坏浏览器前进后退按钮的功能<br> 2.不利于SEO<br> 3.无法跨域</p>
 <p>这些都有相应的解决方法</p>
 <h4 id="1-5__u8BA4_u8BC6XMLHttpRequest_u5BF9_u8C61"><a href="#1-5__u8BA4_u8BC6XMLHttpRequest_u5BF9_u8C61" class="headerlink" title="1.5 认识XMLHttpRequest对象"></a>1.5 认识XMLHttpRequest对象</h4><p>我们可以创建一个实例,并在控制台里面打印</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var xhr = new XMLHttpRequest();&#10;console.log(xhr);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line"><span class="built_in">console</span>.log(xhr);</span><br></pre></td></tr></table></figure>
 <p>认识几个重要的字段,方法。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 字段</span><br><span class="line">onreadystatechange:<span class="literal">null</span>  请求的状态发生变化时的属性</span><br><span class="line">readyState:<span class="number">0</span> 请求的状态</span><br><span class="line">responseText:<span class="string">""</span> 服务器返回的东西</span><br><span class="line">status:<span class="number">0</span>   对应http状态码</span><br><span class="line">textStatus 会告诉你error的类型</span><br><span class="line"><span class="number">2.</span> 原型方法</span><br><span class="line">abort() 取消请求。</span><br><span class="line">open() 建立一个连接</span><br><span class="line">send() 发送请求</span><br><span class="line">setRequestHeader() 设置请求头部</span><br></pre></td></tr></table></figure>
 <h4 id="1-6__u539F_u751Fajax_u5199_u6CD5"><a href="#1-6__u539F_u751Fajax_u5199_u6CD5" class="headerlink" title="1.6 原生ajax写法"></a>1.6 原生ajax写法</h4><p>需要注意的是原生XMLHttpRequest不兼容低版本IE6及以下,所以还需要考虑低版本的IE的兼容性。<br>兼容IE6的写法: ActiveXObject(‘Microsoft.XMLHTTP’)。<br>兼容IE5的写法: ActiveXObject(‘MSXML2.XMLHTTP’)。</p>
