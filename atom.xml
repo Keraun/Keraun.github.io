@@ -82,7 +82,7 @@
     <link href="http://iwuly.com/2016/01/20/web-socket/"/>
     <id>http://iwuly.com/2016/01/20/web-socket/</id>
     <published>2016-01-20T07:20:07.000Z</published>
-    <updated>2016-02-10T11:00:27.000Z</updated>
+    <updated>2016-02-10T11:32:38.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,<br>功能类似于微信朋友圈(能发状态、点赞、评论&amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.</p>
 </blockquote>
@@ -191,7 +191,7 @@ Hidden IFrame(Forever IFrames)
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.parent.frames[<span class="number">1</span>].postMessage(message,<span class="string">'*'</span>);</span><br></pre></td></tr></table></figure>
 <p>示例代码请<a href="http://iwuly.com/snippets/?searchId=004">postMessage跨文档实现方案</a></p>
 <hr>
-<h4 id="5__u53C2_u8003_u6587_u6863"><a href="#5__u53C2_u8003_u6587_u6863" class="headerlink" title="5 参考文档"></a>5 参考文档</h4><p><a href="http://www.iqiyi.com/w_19rs59narl.html?t=1454829077177#vfrm=8-8-0-3" target="_blank" rel="external">HTML5即时通讯</a><br><a href="http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m2" target="_blank" rel="external">JavaScript跨域总结与解决办法</a><br><a href="http://blog.csdn.net/z69183787/article/details/19191385" target="_blank" rel="external">JSONP原理优缺点</a><br><a href="http://blog.phpha.com/backup/archives/1668.html" target="_blank" rel="external">基于WEB的实时通信方案</a><br><a href="http://blog.csdn.net/lihongxun945/article/details/37830667" target="_blank" rel="external">http://blog.csdn.net/lihongxun945/article/details/37830667</a></p>
+<h4 id="5__u53C2_u8003_u6587_u6863"><a href="#5__u53C2_u8003_u6587_u6863" class="headerlink" title="5 参考文档"></a>5 参考文档</h4><p><a href="http://www.iqiyi.com/w_19rs59narl.html?t=1454829077177#vfrm=8-8-0-3" target="_blank" rel="external">HTML5即时通讯</a><br><a href="http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m2" target="_blank" rel="external">JavaScript跨域总结与解决办法</a><br><a href="http://blog.csdn.net/z69183787/article/details/19191385" target="_blank" rel="external">JSONP原理优缺点</a><br><a href="http://blog.phpha.com/backup/archives/1668.html" target="_blank" rel="external">基于WEB的实时通信方案</a><br><a href="http://blog.csdn.net/bao19901210/article/details/21458001" target="_blank" rel="external">window.name实现的跨域数据传输</a><br><a href="http://blog.csdn.net/lihongxun945/article/details/37830667" target="_blank" rel="external">http://blog.csdn.net/lihongxun945/article/details/37830667</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<blockquote>
