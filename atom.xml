@@ -37,6 +37,49 @@
   </entry>
   
   <entry>
+    <title><![CDATA[移动端开发中遇到的那些坑]]></title>
+    <link href="http://iwuly.com/2016/01/28/pit-in-mobile-development/"/>
+    <id>http://iwuly.com/2016/01/28/pit-in-mobile-development/</id>
+    <published>2016-01-28T04:02:43.000Z</published>
+    <updated>2016-02-12T08:21:28.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>这里会记录我在移动端开发中遇到的一些疑难杂症，不定时更新~~</p>
+</blockquote>
+<p>1.CSS3 修改和去除移动端点击事件出现的背景框<br>解决方法:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span>,</span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-tap-highlight-color</span>:<span class="value"> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>2.css禁止用户选择文本<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span>,</span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-user-select</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
+<p>3.让网页支持弹性滚动</p>
+<p>现在很多for Mobile的HTML5网页内都有快速滚动和回弹的效果，看上去和原生app的效率都有得一拼。<br>要实现这个效果很简单，只需要加一行css代码即可：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-webkit-user-<span class="operator"><span class="keyword">select</span>: <span class="keyword">none</span>;</span></span><br></pre></td></tr></table></figure>
+<p>4.移动端布局适配方案</p>
+<ul>
+<li>方案集成:hotcss <ul>
+<li>作者: <a href="https://www.imochen.com/" target="_blank" rel="external">imochen</a></li>
+<li>项目地址:<a href="https://github.com/imochen/hotcss" target="_blank" rel="external">https://github.com/imochen/hotcss</a></li>
+</ul>
+</li>
+<li>方案集成:flexible <ul>
+<li>作者: 某宝</li>
+<li>项目地址:<a href="https://github.com/amfe/lib-flexible" target="_blank" rel="external">https://github.com/amfe/lib-flexible</a></li>
+</ul>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>这里会记录我在移动端开发中遇到的一些疑难杂症，不定时更新~~</p>
+</blockquote>
+<p>1.CSS3 修改和去除移动端点击事件出现的背景框<br>解决方法:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span>,</span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-tap-highlight-color</span>:<span class="value"> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>]]>
+    
+    </summary>
+    
+      <category term="mobile" scheme="http://iwuly.com/tags/mobile/"/>
+    
+      <category term="移动端" scheme="http://iwuly.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Study notes: web 实时通信与跨文档通信]]></title>
     <link href="http://iwuly.com/2016/01/20/web-socket/"/>
     <id>http://iwuly.com/2016/01/20/web-socket/</id>
