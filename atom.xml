@@ -4,7 +4,7 @@
   <subtitle><![CDATA[我们的征途是星辰大海]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://iwuly.com/"/>
-  <updated>2016-02-12T03:54:03.000Z</updated>
+  <updated>2016-02-12T03:57:03.000Z</updated>
   <id>http://iwuly.com/</id>
   
   <author>
@@ -19,11 +19,11 @@
     <link href="http://iwuly.com/2016/02/12/mongodb-base/"/>
     <id>http://iwuly.com/2016/02/12/mongodb-base/</id>
     <published>2016-02-12T03:18:45.000Z</published>
-    <updated>2016-02-12T03:54:03.000Z</updated>
+    <updated>2016-02-12T03:57:03.000Z</updated>
     <content type="html"><![CDATA[<blockquote>
 <p>大过年捣鼓了下mongodb的安装与使用,收藏了一些好文,方便以后开发用到可以快速回忆.</p>
 </blockquote>
-<p>链接:<br><a href="https://segmentfault.com/a/1190000002547229#articleHeader4" target="_blank" rel="external">Mac下安装MongoDB 及使用教程</a><br><a href="http://jingyan.baidu.com/article/6fb756ecbfe474241858fb3b.html" target="_blank" rel="external">Mongodb Mac版的安装</a><br><a href="http://www.cnblogs.com/TankMa/archive/2011/06/08/2074947.html" target="_blank" rel="external">MongoDB基本使用</a><br><a href="https://segmentfault.com/a/1190000004057550" target="_blank" rel="external">Node.js操作MongoDB数据库</a><br><a href="https://segmentfault.com/a/1190000003717873" target="_blank" rel="external">MongoDB 常用指令</a><br><a href="http://my.oschina.net/chenhao901007/blog/312367" target="_blank" rel="external">原  nodejs+express+mongodb简单的例子</a></p>
+<p>链接:<br><a href="https://segmentfault.com/a/1190000002547229#articleHeader4" target="_blank" rel="external">Mac下安装MongoDB 及使用教程</a><br><a href="http://jingyan.baidu.com/article/6fb756ecbfe474241858fb3b.html" target="_blank" rel="external">Mongodb Mac版的安装</a><br><a href="http://www.cnblogs.com/TankMa/archive/2011/06/08/2074947.html" target="_blank" rel="external">MongoDB基本使用</a><br><a href="https://segmentfault.com/a/1190000004057550" target="_blank" rel="external">Node.js操作MongoDB数据库</a><br><a href="https://segmentfault.com/a/1190000003717873" target="_blank" rel="external">MongoDB 常用指令</a><br><a href="http://my.oschina.net/chenhao901007/blog/312367" target="_blank" rel="external">nodejs+express+mongodb简单的例子</a></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<blockquote>
