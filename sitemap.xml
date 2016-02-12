@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iwuly.com/2016/02/12/mongodb-base/</loc>
+    <lastmod>2016-02-12T03:54:03.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
     <lastmod>2016-02-10T11:42:40.000Z</lastmod>
   </url>
