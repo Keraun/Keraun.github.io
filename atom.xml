@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[iwulyの前端小站]]></title>
-  <subtitle><![CDATA[我们的征途是星辰大海]]></subtitle>
+  <subtitle><![CDATA[一蓑烟雨任平生]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://iwuly.com/"/>
-  <updated>2016-02-12T03:57:03.000Z</updated>
+  <updated>2016-06-18T15:19:35.000Z</updated>
   <id>http://iwuly.com/</id>
   
   <author>
@@ -19,17 +19,13 @@
     <link href="http://iwuly.com/2016/02/12/mongodb-base/"/>
     <id>http://iwuly.com/2016/02/12/mongodb-base/</id>
     <published>2016-02-12T03:18:45.000Z</published>
-    <updated>2016-02-12T03:57:03.000Z</updated>
-    <content type="html"><![CDATA[<blockquote>
-<p>大过年捣鼓了下mongodb的安装与使用,收藏了一些好文,方便以后开发用到可以快速回忆.</p>
-</blockquote>
+    <updated>2016-06-18T15:19:35.000Z</updated>
+    <content type="html"><![CDATA[<p>大过年捣鼓了下mongodb的安装与使用,收藏了一些好文,方便以后开发用到可以快速回忆.</p>
 <p>链接:<br><a href="https://segmentfault.com/a/1190000002547229#articleHeader4" target="_blank" rel="external">Mac下安装MongoDB 及使用教程</a><br><a href="http://jingyan.baidu.com/article/6fb756ecbfe474241858fb3b.html" target="_blank" rel="external">Mongodb Mac版的安装</a><br><a href="http://www.cnblogs.com/TankMa/archive/2011/06/08/2074947.html" target="_blank" rel="external">MongoDB基本使用</a><br><a href="https://segmentfault.com/a/1190000004057550" target="_blank" rel="external">Node.js操作MongoDB数据库</a><br><a href="https://segmentfault.com/a/1190000003717873" target="_blank" rel="external">MongoDB 常用指令</a><br><a href="http://my.oschina.net/chenhao901007/blog/312367" target="_blank" rel="external">nodejs+express+mongodb简单的例子</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<blockquote>
-<p>大过年捣鼓了下mongodb的安装与使用,收藏了一些好文,方便以后开发用到可以快速回忆.</p>
-</blockquote>
-<p>链接:<br><a href="https://segmentfault.com/a/119000000254722]]>
+    <![CDATA[<p>大过年捣鼓了下mongodb的安装与使用,收藏了一些好文,方便以后开发用到可以快速回忆.</p>
+<p>链接:<br><a href="https://segmentfault.com/a/1190000002547229#articleHeader4" target="_]]>
     </summary>
     
       <category term="mongodb" scheme="http://iwuly.com/tags/mongodb/"/>
@@ -41,10 +37,8 @@
     <link href="http://iwuly.com/2016/01/28/pit-in-mobile-development/"/>
     <id>http://iwuly.com/2016/01/28/pit-in-mobile-development/</id>
     <published>2016-01-28T04:02:43.000Z</published>
-    <updated>2016-02-12T08:21:28.000Z</updated>
-    <content type="html"><![CDATA[<blockquote>
-<p>这里会记录我在移动端开发中遇到的一些疑难杂症，不定时更新~~</p>
-</blockquote>
+    <updated>2016-06-18T15:50:03.000Z</updated>
+    <content type="html"><![CDATA[<p>这里会记录我在移动端开发中遇到的一些疑难杂症，不定时更新~~</p>
 <p>1.CSS3 修改和去除移动端点击事件出现的背景框<br>解决方法:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span>,</span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-tap-highlight-color</span>:<span class="value"> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
 <p>2.css禁止用户选择文本<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span>,</span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-user-select</span>:<span class="value"> none</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
@@ -66,9 +60,7 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<blockquote>
-<p>这里会记录我在移动端开发中遇到的一些疑难杂症，不定时更新~~</p>
-</blockquote>
+    <![CDATA[<p>这里会记录我在移动端开发中遇到的一些疑难杂症，不定时更新~~</p>
 <p>1.CSS3 修改和去除移动端点击事件出现的背景框<br>解决方法:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span>,</span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-tap-highlight-color</span>:<span class="value"> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>]]>
     
     </summary>
@@ -84,10 +76,8 @@
     <link href="http://iwuly.com/2016/01/20/web-socket/"/>
     <id>http://iwuly.com/2016/01/20/web-socket/</id>
     <published>2016-01-20T07:20:07.000Z</published>
-    <updated>2016-02-10T11:42:40.000Z</updated>
-    <content type="html"><![CDATA[<blockquote>
-<p>临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,<br>功能类似于微信朋友圈(能发状态、点赞、评论&amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.</p>
-</blockquote>
+    <updated>2016-06-18T15:21:22.000Z</updated>
+    <content type="html"><![CDATA[<p> 临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,功能类似于微信朋友圈(能发状态、点赞、评论&amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.</p>
 <h4 id="1__u4EC0_u4E48_u662F_u5B9E_u65F6_u901A_u4FE1"><a href="#1__u4EC0_u4E48_u662F_u5B9E_u65F6_u901A_u4FE1" class="headerlink" title="1 什么是实时通信"></a>1 什么是实时通信</h4><p><strong>实时通信:</strong> 在网络连接的时候,需要及时的把服务端上的消息回传到消息。比如在线游戏、微博、电子邮件等。</p>
 <a id="more"></a>
 <p><strong>实时通信分类:</strong></p>
@@ -196,9 +186,7 @@ Hidden IFrame(Forever IFrames)
 <h4 id="5__u53C2_u8003_u6587_u6863"><a href="#5__u53C2_u8003_u6587_u6863" class="headerlink" title="5 参考文档"></a>5 参考文档</h4><p><a href="http://www.iqiyi.com/w_19rs59narl.html?t=1454829077177#vfrm=8-8-0-3" target="_blank" rel="external">HTML5即时通讯</a><br><a href="http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m2" target="_blank" rel="external">JavaScript跨域总结与解决办法</a><br><a href="http://blog.csdn.net/z69183787/article/details/19191385" target="_blank" rel="external">JSONP原理优缺点</a><br><a href="http://blog.phpha.com/backup/archives/1668.html" target="_blank" rel="external">基于WEB的实时通信方案</a><br><a href="http://blog.csdn.net/bao19901210/article/details/21458001" target="_blank" rel="external">window.name实现的跨域数据传输</a><br><a href="http://www.cnblogs.com/dolphinX/p/3464056.html" target="_blank" rel="external">html5 postMessage解决跨域、跨窗口消息传递</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<blockquote>
-<p>临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,<br>功能类似于微信朋友圈(能发状态、点赞、评论&amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.</p>
-</blockquote>
+    <![CDATA[<p> 临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,功能类似于微信朋友圈(能发状态、点赞、评论&amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.</p>
 <h4 id="1__u4EC0_u4E48_u662F_u5B9E_u65F6_u901A_u4FE1"><a href="#1__u4EC0_u4E48_u662F_u5B9E_u65F6_u901A_u4FE1" class="headerlink" title="1 什么是实时通信"></a>1 什么是实时通信</h4><p><strong>实时通信:</strong> 在网络连接的时候,需要及时的把服务端上的消息回传到消息。比如在线游戏、微博、电子邮件等。</p>]]>
     
     </summary>
@@ -214,10 +202,8 @@ Hidden IFrame(Forever IFrames)
     <link href="http://iwuly.com/2016/01/03/Design-Patterns-Observer/"/>
     <id>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</id>
     <published>2016-01-03T15:27:09.000Z</published>
-    <updated>2016-02-04T08:25:19.000Z</updated>
-    <content type="html"><![CDATA[<blockquote>
-<p>学习观察者模式的时候发现自己有很多不懂,主要是平时项目没有用到,所以比较陌生。工作之余抓着间隙虚心向同事讨教了几招,整理了一下自己的近期学习笔记。如有纰漏，欢迎留言&amp;评论~~</p>
-</blockquote>
+    <updated>2016-06-18T15:21:45.000Z</updated>
+    <content type="html"><![CDATA[<p>学习观察者模式的时候发现自己有很多不懂,主要是平时项目没有用到,所以比较陌生。工作之余抓着间隙虚心向同事讨教了几招,整理了一下自己的近期学习笔记。如有纰漏，欢迎留言&amp;评论~~</p>
   <a id="more"></a>
 <h4 id="1__u4E1A_u52A1_u573A_u666F"><a href="#1__u4E1A_u52A1_u573A_u666F" class="headerlink" title="1 业务场景"></a>1 业务场景</h4><p>  了解观察者模式,咱们可以先看看这段代码。<br>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#btn'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">//回调函数</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
 <p>  使用jQuery的同学对这段代码都很熟悉吧~~<br>  监听#btn的click事件并给予回调。很早的时候,业务逻辑我是直接写在回调函数里的。然而业务变复杂后,<br>  这种写法的短板也就出来了,<strong>程序结构不清晰,耦合度高,代码重用性低</strong>等等。后来我尝试了这样：<br>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">A</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">//业务逻辑</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">B</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">//业务逻辑</span></span><br><span class="line">&#125;</span><br><span class="line">$(<span class="string">'#btn1'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  A();</span><br><span class="line">  B();</span><br><span class="line">  ...</span><br><span class="line">&#125;);</span><br><span class="line">$(<span class="string">'#btn2'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  A();</span><br><span class="line">  B();</span><br><span class="line">  ...</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
@@ -255,9 +241,7 @@ Hidden IFrame(Forever IFrames)
 <h4 id="4__u53C2_u8003_u8D44_u6599"><a href="#4__u53C2_u8003_u8D44_u6599" class="headerlink" title="4 参考资料"></a>4 参考资料</h4><p><a href="http://blog.csdn.net/tjvictor/article/details/5223309" target="_blank" rel="external">设计模式—订阅发布模式(Subscribe/Publish)</a><br><a href="http://baike.baidu.com/link?url=lWPrFN9sAPxLzfdn8eDsHMIIi8REuLlNi2jnPiH6Qvh3ufLexs0LTbmUUcglEzd3AofXovv6EHSOeQFtRT35_a" target="_blank" rel="external">百度百科-观察者模式</a><br><a href="http://www.cnblogs.com/li-peng/archive/2013/02/04/2892116.html" target="_blank" rel="external">设计模式：观察者模式</a><br><a href="http://shihuacivis.github.io/2015/09/10/20150910_subPub/" target="_blank" rel="external">Js实现基于发布/订阅机制的事件管理器（观察者模式）</a></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<blockquote>
-<p>学习观察者模式的时候发现自己有很多不懂,主要是平时项目没有用到,所以比较陌生。工作之余抓着间隙虚心向同事讨教了几招,整理了一下自己的近期学习笔记。如有纰漏，欢迎留言&amp;评论~~</p>
-</blockquote>]]>
+    <![CDATA[<p>学习观察者模式的时候发现自己有很多不懂,主要是平时项目没有用到,所以比较陌生。工作之余抓着间隙虚心向同事讨教了几招,整理了一下自己的近期学习笔记。如有纰漏，欢迎留言&amp;评论~~</p>]]>
     
     </summary>
     
@@ -274,9 +258,9 @@ Hidden IFrame(Forever IFrames)
     <link href="http://iwuly.com/2015/12/31/Written-in-2015/"/>
     <id>http://iwuly.com/2015/12/31/Written-in-2015/</id>
     <published>2015-12-31T15:59:59.000Z</published>
-    <updated>2016-01-10T08:49:54.000Z</updated>
-    <content type="html"><![CDATA[<pre><code>今天是2015年12月31日，晴。
-</code></pre><p>早在几月前，我便提醒自己，不论文笔如何，总要记录点什么，颇有几分励志的味道在里面。 </p>
+    <updated>2016-06-18T15:22:07.000Z</updated>
+    <content type="html"><![CDATA[<p> 今天是2015年12月31日，晴。</p>
+<p>早在几月前，我便提醒自己，不论文笔如何，总要记录点什么，颇有几分励志的味道在里面。 </p>
 <p>2015年，是繁忙的一年。年初确定了自己的职业方向，随后在老板的体谅下，我结束了实习之旅。回到学校，开始为弄毕业设计忙碌，中间整理了过去实习的经验，还看了不少有关前端的经典书籍。终于在6月份毕业了，从此我过上了跟大部分人不大一样的人生。白天上班，晚上看书、写demo、折腾点业余东西。技术上虽然比年初进步了不少，但我知道自己还差的很远呢！繁忙之后，回首看看这一年的路，终究还是一条，<strong>平凡之路</strong>。</p>
 <a id="more"></a>
 <h3 id="u5173_u4E8E_u6280_u672F"><a href="#u5173_u4E8E_u6280_u672F" class="headerlink" title="关于技术"></a>关于技术</h3><p>参加完D2前端大会，发现今年的主题基本围绕着react和node。前端工程化、webapp经常能听到大家的一些交流。自己平时也就私下捣鼓，瞎折腾。之前用Angular参与过几个大型项目，ui－router，自定义指令，国际化翻译，都玩过。不过现在公司的项目主要是基于jQuery，主要负责web页面开发，app内webview页面的活动开发。入职半年，把之前单一的可重复性低的活动折腾成了可后台配置，前端模版和控件可自由搭配，可重复性较高的活动接入系统。由于初期经验不足考虑不全面，导致期间架构一直在迭代，更新了五六个小版本，一个大版本。很多东西在实践中摸索，在摸索中找方案，体会到了做产品的不容易之处。真心是做了才知道的感觉，光说不练绝对体会不到。</p>
@@ -311,8 +295,8 @@ Hidden IFrame(Forever IFrames)
 <p>祝福每个人。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<pre><code>今天是2015年12月31日，晴。
-</code></pre><p>早在几月前，我便提醒自己，不论文笔如何，总要记录点什么，颇有几分励志的味道在里面。 </p>
+    <![CDATA[<p> 今天是2015年12月31日，晴。</p>
+<p>早在几月前，我便提醒自己，不论文笔如何，总要记录点什么，颇有几分励志的味道在里面。 </p>
 <p>2015年，是繁忙的一年。年初确定了自己的职业方向，随后在老板的体谅下，我结束了实习之旅。回到学校，开始为弄毕业设计忙碌，中间整理了过去实习的经验，还看了不少有关前端的经典书籍。终于在6月份毕业了，从此我过上了跟大部分人不大一样的人生。白天上班，晚上看书、写demo、折腾点业余东西。技术上虽然比年初进步了不少，但我知道自己还差的很远呢！繁忙之后，回首看看这一年的路，终究还是一条，<strong>平凡之路</strong>。</p>]]>
     
     </summary>
@@ -328,10 +312,8 @@ Hidden IFrame(Forever IFrames)
     <link href="http://iwuly.com/2015/02/01/ajax001/"/>
     <id>http://iwuly.com/2015/02/01/ajax001/</id>
     <published>2015-02-01T13:05:54.000Z</published>
-    <updated>2016-02-10T10:39:50.000Z</updated>
-    <content type="html"><![CDATA[<h4 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h4><blockquote>
-<p>前段时间群里做知识分享,<a href="http://www.cnblogs.com/lvdabao/" target="_blank" rel="external">大豹</a>老师分享了他对Ajax的一些心得体会,当时听的比较入迷,整理了一些笔记,希望对大家有帮助。</p>
-</blockquote>
+    <updated>2016-06-18T15:35:13.000Z</updated>
+    <content type="html"><![CDATA[<h4 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h4><p>前段时间群里做知识分享,<a href="http://www.cnblogs.com/lvdabao/" target="_blank" rel="external">大豹</a>老师分享了他对Ajax的一些心得体会,当时听的比较入迷,整理了一些笔记,希望对大家有帮助。</p>
 <h4 id="u77E5_u8BC6_u76EE_u5F55_u7ED3_u6784"><a href="#u77E5_u8BC6_u76EE_u5F55_u7ED3_u6784" class="headerlink" title="知识目录结构"></a>知识目录结构</h4><ul>
 <li>Ajax 基础知识</li>
 <li>jQuery中Ajax的相关用法</li>
@@ -342,9 +324,7 @@ Hidden IFrame(Forever IFrames)
 <li>参考资料<a id="more"></a>
 </li>
 </ul>
-<h3 id="1_Ajax__u57FA_u7840_u77E5_u8BC6"><a href="#1_Ajax__u57FA_u7840_u77E5_u8BC6" class="headerlink" title="1 Ajax 基础知识"></a>1 Ajax 基础知识</h3><h4 id="1-1_Ajax_u662F_u4EC0_u4E48"><a href="#1-1_Ajax_u662F_u4EC0_u4E48" class="headerlink" title="1.1 Ajax是什么"></a>1.1 Ajax是什么</h4><blockquote>
-<p>Ajax的全称是Asyncronous Javascript And XML(异步传输JavaScript+XML)</p>
-</blockquote>
+<h3 id="1_Ajax__u57FA_u7840_u77E5_u8BC6"><a href="#1_Ajax__u57FA_u7840_u77E5_u8BC6" class="headerlink" title="1 Ajax 基础知识"></a>1 Ajax 基础知识</h3><h4 id="1-1_Ajax_u662F_u4EC0_u4E48"><a href="#1-1_Ajax_u662F_u4EC0_u4E48" class="headerlink" title="1.1 Ajax是什么"></a>1.1 Ajax是什么</h4><p>Ajax的全称是Asyncronous Javascript And XML(异步传输JavaScript+XML)</p>
 <ul>
 <li>直白地说,就是没用Ajax的页面,你点一个按钮就要刷新一下页面,尽管新页面上只有一行和当前页面不一样,但还是要无聊地等待页面刷新。</li>
 <li>用了Ajax之后再点击,然后页面上的一行就变化了,页面本身不用刷新。(简称页面无刷新数据交互)</li>
@@ -352,9 +332,7 @@ Hidden IFrame(Forever IFrames)
 <li>XML只是一种数据格式,在这里并不重要,现在大部分人用JSON格式代替XML,原因是JSON更加简洁,解析速度也更快。</li>
 </ul>
 <p><strong>总结: 只要是JS调用异步通讯组件并使用格式化的数据来更新web页面上的内容或操作过程,那么我们用的方法就可算是Ajax。</strong></p>
-<h4 id="1-2__u540C_u6B65_u548C_u5F02_u6B65"><a href="#1-2__u540C_u6B65_u548C_u5F02_u6B65" class="headerlink" title="1.2 同步和异步"></a>1.2 同步和异步</h4><blockquote>
-<p>javascript是单线程的，代码始终自上往下依次执行。</p>
-</blockquote>
+<h4 id="1-2__u540C_u6B65_u548C_u5F02_u6B65"><a href="#1-2__u540C_u6B65_u548C_u5F02_u6B65" class="headerlink" title="1.2 同步和异步"></a>1.2 同步和异步</h4><p>javascript是单线程的，代码始终自上往下依次执行。</p>
 <p>可以异步执行的代码：Ajax、setTimeout、setInterval。</p>
 <h4 id="1-3__u5F02_u6B65_u8BF7_u6C42_u6709_u4EC0_u4E48_u7528_u9014_uFF1F"><a href="#1-3__u5F02_u6B65_u8BF7_u6C42_u6709_u4EC0_u4E48_u7528_u9014_uFF1F" class="headerlink" title="1.3 异步请求有什么用途？"></a>1.3 异步请求有什么用途？</h4><ol>
 <li>制作单页面应用，用户操作不进行跳转、每次只更新局部内容</li>
@@ -422,9 +400,7 @@ Hidden IFrame(Forever IFrames)
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h4 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h4><blockquote>
-<p>前段时间群里做知识分享,<a href="http://www.cnblogs.com/lvdabao/">大豹</a>老师分享了他对Ajax的一些心得体会,当时听的比较入迷,整理了一些笔记,希望对大家有帮助。</p>
-</blockquote>
+    <![CDATA[<h4 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h4><p>前段时间群里做知识分享,<a href="http://www.cnblogs.com/lvdabao/">大豹</a>老师分享了他对Ajax的一些心得体会,当时听的比较入迷,整理了一些笔记,希望对大家有帮助。</p>
 <h4 id="u77E5_u8BC6_u76EE_u5F55_u7ED3_u6784"><a href="#u77E5_u8BC6_u76EE_u5F55_u7ED3_u6784" class="headerlink" title="知识目录结构"></a>知识目录结构</h4><ul>
 <li>Ajax 基础知识</li>
 <li>jQuery中Ajax的相关用法</li>
