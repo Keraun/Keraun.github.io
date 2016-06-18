@@ -124,7 +124,7 @@ body,
 }
 body {
   background: #eee;
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 .outer {
@@ -484,7 +484,7 @@ body {
   background: none;
   color: #555;
   width: 100%;
-  font: 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 13px "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
   outline: none;
 }
 .search-form-input::-webkit-search-results-decoration,
@@ -523,6 +523,18 @@ body {
 .article-date {
   float: left;
 }
+.article-other {
+  text-align: center;
+  padding: 0 20px 20px 20px;
+}
+.article-other .article-title-date {
+  height: auto;
+  width: 95%;
+  padding: 0 2.5% 20px 2.5%;
+  text-align: center;
+  font-size: 12px;
+  color: #8e8e8e;
+}
 .article-category {
   float: left;
   line-height: 1em;
@@ -557,6 +569,15 @@ body {
 }
 a.article-title:hover {
   color: #258fb8;
+}
+.article-entry p:first-child:first-letter {
+  color: #333;
+  font-weight: normal;
+  float: left;
+  font-size: 2.1em;
+  line-height: 1.3em;
+  font-weight: bold;
+  padding-right: 5px;
 }
 .article-entry {
   color: #555;
@@ -638,7 +659,7 @@ a.article-title:hover {
 .article-entry blockquote footer {
   font-size: 14px;
   margin: 1.6em 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -681,22 +702,40 @@ a.article-title:hover {
   height: 100%;
   margin-top: 0;
 }
+.article-more-link {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: block;
+  float: left;
+  color: #ffba00;
+  font-size: 12px;
+  line-height: 32px;
+  margin-bottom: 10px;
+  background: #f6f6f6;
+  cursor: pointer;
+}
 .article-more-link a {
   display: inline-block;
   line-height: 1em;
-  padding: 6px 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  background: #eee;
-  color: #999;
-  text-shadow: 0 1px #fff;
+  padding: 8px 0;
+  width: 100%;
+/*border-radius: 15px
+  background: color-background
+  color: color-grey
+  text-shadow: 0 1px #fff*/
   text-decoration: none;
+  -webkit-transition: color 0.7s, background 0.7s;
+  -moz-transition: color 0.7s, background 0.7s;
+  -ms-transition: color 0.7s, background 0.7s;
+  transition: color 0.7s, background 0.7s;
 }
 .article-more-link a:hover {
   background: #258fb8;
-  color: #fff;
+  color: #f6f6f6;
+  width: 100%;
   text-decoration: none;
-  text-shadow: 0 1px #1e7293;
+/*text-shadow: 0 1px darken(color-link, 20%)*/
 }
 .article-footer {
   font-size: 0.85em;
@@ -719,6 +758,12 @@ a.article-title:hover {
 }
 .article-footer a:hover {
   color: #555;
+}
+.article-footer .article-title-date {
+  float: left;
+  border-right: 1px solid #ddd;
+  padding-right: 0.5em;
+  margin-right: 0.5em;
 }
 .article-tag-list-item {
   float: left;
@@ -846,7 +891,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0 15px;
   color: #555;
   outline: none;
@@ -1208,7 +1253,7 @@ a.article-title:hover {
 .article-entry .gist .gist-file .gist-meta {
   background: #2d2d2d;
   color: #999;
-  font: 0.85em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 0.85em "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 0 0;
   padding: 0;
   margin-top: 1em;
