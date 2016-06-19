@@ -190,6 +190,10 @@ body {
 html {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
+html,
+body {
+  overflow-x: hidden;
+}
 .outer {
   background: transparent;
 }
@@ -1256,12 +1260,14 @@ a.article-title:hover {
     border-bottom: 1px solid #ddd;
   }
   .article-nav-link-wrap {
-    margin-top: 15px;
+    margin: 15px 0;
+    float: left;
+    width: 50%;
   }
   .article-date {
     margin-top: 8px;
   }
-  #mobile-nav {
+  #mobile-nav .mobile-nav-box {
     padding-top: 50px;
   }
   .mobile-nav-link {
