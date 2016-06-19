@@ -829,6 +829,7 @@ a.article-title:hover {
   padding-right: 8px;
 }
 .article-share-link {
+  color: #999 !important;
   cursor: pointer;
   float: right;
   margin-left: 20px;

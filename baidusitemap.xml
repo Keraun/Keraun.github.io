@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
+    <lastmod>2016-06-19T05:48:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>设计模式之观察者模式</title>
+        <pubTime>2016-01-03T15:27:09.000Z</pubTime>
+        
+        <tag>观察者模式</tag>
+         
+        <tag>设计模式</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
     <lastmod>2016-06-19T04:46:57.000Z</lastmod>
     <data>
@@ -33,27 +52,6 @@
         <tag>重排</tag>
          
         <tag>重绘</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
-    <lastmod>2016-06-19T04:46:42.000Z</lastmod>
-    <data>
-        <display>
-        <title>设计模式之观察者模式</title>
-        <pubTime>2016-01-03T15:27:09.000Z</pubTime>
-        
-        <tag>发布/订阅者模式</tag>
-         
-        <tag>观察者模式</tag>
-         
-        <tag>设计模式</tag>
          
          
            

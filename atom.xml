@@ -202,7 +202,7 @@ Hidden IFrame(Forever IFrames)
     <link href="http://iwuly.com/2016/01/03/Design-Patterns-Observer/"/>
     <id>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</id>
     <published>2016-01-03T15:27:09.000Z</published>
-    <updated>2016-06-19T04:46:42.000Z</updated>
+    <updated>2016-06-19T05:48:55.000Z</updated>
     <content type="html"><![CDATA[<p>学习观察者模式的时候发现自己有很多不懂,主要是平时项目没有用到,所以比较陌生。工作之余抓着间隙虚心向同事讨教了几招,整理了一下自己的近期学习笔记。如有纰漏，欢迎留言&amp;评论~~</p>
   <a id="more"></a>
 <h4 id="1__u4E1A_u52A1_u573A_u666F"><a href="#1__u4E1A_u52A1_u573A_u666F" class="headerlink" title="1 业务场景"></a>1 业务场景</h4><p>  了解观察者模式,咱们可以先看看这段代码。<br>  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#btn'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">//回调函数</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
@@ -244,8 +244,6 @@ Hidden IFrame(Forever IFrames)
     <![CDATA[<p>学习观察者模式的时候发现自己有很多不懂,主要是平时项目没有用到,所以比较陌生。工作之余抓着间隙虚心向同事讨教了几招,整理了一下自己的近期学习笔记。如有纰漏，欢迎留言&amp;评论~~</p>]]>
     
     </summary>
-    
-      <category term="发布/订阅者模式" scheme="http://iwuly.com/tags/%E5%8F%91%E5%B8%83-%E8%AE%A2%E9%98%85%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
     
       <category term="观察者模式" scheme="http://iwuly.com/tags/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
     

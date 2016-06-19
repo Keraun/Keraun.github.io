@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
+    <lastmod>2016-06-19T05:48:55.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
     <lastmod>2016-06-19T04:46:57.000Z</lastmod>
   </url>
@@ -9,11 +14,6 @@
   <url>
     <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
     <lastmod>2016-06-19T04:46:51.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
-    <lastmod>2016-06-19T04:46:42.000Z</lastmod>
   </url>
   
   <url>
