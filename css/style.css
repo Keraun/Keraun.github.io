@@ -1198,6 +1198,48 @@ a.article-title:hover {
   line-height: 1.6em;
   font-size: 0.85em;
 }
+@media screen and (max-width: 479px) {
+  #header {
+    height: 50px;
+  }
+  #banner {
+    background: #323436 !important;
+  }
+  #logo {
+    font-size: 16px;
+    color: #999;
+  }
+  #subtitle-wrap {
+    display: none;
+  }
+  #header-title {
+    width: 100%;
+  }
+  #header-inner {
+    z-index: 10;
+  }
+  #nav-rss-link {
+    display: none;
+  }
+  #nav-search-btn {
+    margin-right: 10px;
+  }
+  #main-nav-toggle {
+    margin-left: 10px;
+  }
+  .article-type-post {
+    margin: 5px 5px 0;
+  }
+  .article-share-link {
+    display: none;
+  }
+  #footer {
+    display: none;
+  }
+  #page-nav {
+    margin: 10px 5px;
+  }
+}
 .article-entry pre,
 .article-entry .highlight {
   background: #2d2d2d;
