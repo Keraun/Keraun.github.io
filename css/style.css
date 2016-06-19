@@ -187,6 +187,9 @@ body {
     margin: 0 0.833333333333333%;
   }
 }
+html {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 .outer {
   background: transparent;
 }
