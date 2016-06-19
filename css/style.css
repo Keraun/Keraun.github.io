@@ -1528,7 +1528,7 @@ pre .javascript .function {
   border-radius: 3px;
 }
 .widget a {
-  color: #258fb8;
+  color: #6a6352;
   text-decoration: none;
 }
 .widget a:hover {
@@ -1545,6 +1545,16 @@ pre .javascript .function {
 .widget dl dl {
   margin-left: 15px;
   list-style: disc;
+}
+.widget li {
+  border-top: 1px solid #d6d7d9;
+  padding: 6.25px 0 6.25px 12.5px;
+}
+.widget li:first-child {
+  border-top: none;
+}
+.tagcloud a {
+  padding: 2px 5px;
 }
 .widget {
   line-height: 1.6em;

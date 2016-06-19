@@ -4,6 +4,44 @@
 
     
   <url>
+    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
+    <lastmod>2016-06-19T09:30:31.000Z</lastmod>
+    <data>
+        <display>
+        <title>重绘(redraw)和重排(reflow)</title>
+        <pubTime>2014-09-06T12:26:04.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>重排</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://iwuly.com/2016/01/28/pit-in-mobile-development/</loc>
+    <lastmod>2016-06-19T09:30:15.000Z</lastmod>
+    <data>
+        <display>
+        <title>移动端开发中遇到的那些坑</title>
+        <pubTime>2016-01-28T04:02:43.000Z</pubTime>
+        
+        <tag>html</tag>
+         
+        <tag>mobile</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
     <lastmod>2016-06-19T07:10:38.000Z</lastmod>
     <data>
@@ -44,25 +82,6 @@
 
     
   <url>
-    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
-    <lastmod>2016-06-19T04:46:51.000Z</lastmod>
-    <data>
-        <display>
-        <title>重绘(redraw)和重排(reflow)</title>
-        <pubTime>2014-09-06T12:26:04.000Z</pubTime>
-        
-        <tag>重排</tag>
-         
-        <tag>重绘</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
     <lastmod>2016-06-19T04:46:38.000Z</lastmod>
     <data>
@@ -90,25 +109,6 @@
         <pubTime>2016-02-12T03:18:45.000Z</pubTime>
         
         <tag>mongodb</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://iwuly.com/2016/01/28/pit-in-mobile-development/</loc>
-    <lastmod>2016-06-18T15:50:03.000Z</lastmod>
-    <data>
-        <display>
-        <title>移动端开发中遇到的那些坑</title>
-        <pubTime>2016-01-28T04:02:43.000Z</pubTime>
-        
-        <tag>mobile</tag>
-         
-        <tag>移动端</tag>
          
          
            

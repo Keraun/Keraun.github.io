@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
+    <lastmod>2016-06-19T09:30:31.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/2016/01/28/pit-in-mobile-development/</loc>
+    <lastmod>2016-06-19T09:30:15.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
     <lastmod>2016-06-19T07:10:38.000Z</lastmod>
   </url>
@@ -22,11 +32,6 @@
   </url>
   
   <url>
-    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
-    <lastmod>2016-06-19T04:46:51.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
     <lastmod>2016-06-19T04:46:38.000Z</lastmod>
   </url>
@@ -34,11 +39,6 @@
   <url>
     <loc>http://iwuly.com/2016/02/12/mongodb-base/</loc>
     <lastmod>2016-06-18T18:26:14.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/2016/01/28/pit-in-mobile-development/</loc>
-    <lastmod>2016-06-18T15:50:03.000Z</lastmod>
   </url>
   
   <url>

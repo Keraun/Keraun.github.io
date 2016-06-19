@@ -37,7 +37,7 @@
     <link href="http://iwuly.com/2016/01/28/pit-in-mobile-development/"/>
     <id>http://iwuly.com/2016/01/28/pit-in-mobile-development/</id>
     <published>2016-01-28T04:02:43.000Z</published>
-    <updated>2016-06-18T15:50:03.000Z</updated>
+    <updated>2016-06-19T09:30:15.000Z</updated>
     <content type="html"><![CDATA[<p>这里会记录我在移动端开发中遇到的一些疑难杂症，不定时更新~~</p>
 <p>1.CSS3 修改和去除移动端点击事件出现的背景框<br>解决方法:<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">html</span>,</span><br><span class="line"><span class="tag">body</span> <span class="rules">&#123;</span><br><span class="line">  <span class="rule"><span class="attribute">-webkit-tap-highlight-color</span>:<span class="value"> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>)</span></span>;</span><br><span class="line">&#125;</span></span><br></pre></td></tr></table></figure></p>
 <a id="more"></a>
@@ -65,9 +65,9 @@
     
     </summary>
     
-      <category term="mobile" scheme="http://iwuly.com/tags/mobile/"/>
+      <category term="html" scheme="http://iwuly.com/tags/html/"/>
     
-      <category term="移动端" scheme="http://iwuly.com/tags/%E7%A7%BB%E5%8A%A8%E7%AB%AF/"/>
+      <category term="mobile" scheme="http://iwuly.com/tags/mobile/"/>
     
   </entry>
   
@@ -417,7 +417,7 @@ Hidden IFrame(Forever IFrames)
     <link href="http://iwuly.com/2014/09/06/redraw-reflow/"/>
     <id>http://iwuly.com/2014/09/06/redraw-reflow/</id>
     <published>2014-09-06T12:26:04.000Z</published>
-    <updated>2016-06-19T04:46:51.000Z</updated>
+    <updated>2016-06-19T09:30:31.000Z</updated>
     <content type="html"><![CDATA[<p>记忆关键词：重绘、重排、渲染、DOM树、性能</p>
 <h3 id="u8FC7_u7A0B_3A"><a href="#u8FC7_u7A0B_3A" class="headerlink" title="过程:"></a>过程:</h3><p>  ① HTML文档-&gt;② DOM树 -&gt;③ 渲染树 -&gt;④ 页面<br><a id="more"></a></p>
 <h3 id="u89E3_u6790_3A"><a href="#u89E3_u6790_3A" class="headerlink" title="解析:"></a>解析:</h3><ul>
@@ -460,9 +460,9 @@ Hidden IFrame(Forever IFrames)
     
     </summary>
     
-      <category term="重排" scheme="http://iwuly.com/tags/%E9%87%8D%E6%8E%92/"/>
+      <category term="html" scheme="http://iwuly.com/tags/html/"/>
     
-      <category term="重绘" scheme="http://iwuly.com/tags/%E9%87%8D%E7%BB%98/"/>
+      <category term="重排" scheme="http://iwuly.com/tags/%E9%87%8D%E6%8E%92/"/>
     
   </entry>
   
