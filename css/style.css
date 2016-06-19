@@ -582,15 +582,6 @@ body {
 a.article-title:hover {
   color: #258fb8;
 }
-.article-entry p:first-child:first-letter {
-  color: #333;
-  font-weight: normal;
-  float: left;
-  font-size: 2.1em;
-  line-height: 1.3em;
-  font-weight: bold;
-  padding-right: 5px;
-}
 .article-entry {
   color: #555;
   padding: 0 20px;
