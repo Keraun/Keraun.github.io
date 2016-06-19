@@ -400,7 +400,8 @@ body {
   margin-left: -15px;
 }
 .nav-icon,
-.main-nav-link {
+.main-nav-link,
+.social-nav-link {
   float: left;
   color: #fff;
   opacity: 0.6;
@@ -414,7 +415,8 @@ body {
   padding: 20px 15px;
 }
 .nav-icon:hover,
-.main-nav-link:hover {
+.main-nav-link:hover,
+.social-nav-link:hover {
   opacity: 1;
 }
 .nav-icon {
@@ -436,11 +438,22 @@ body {
     display: none;
   }
 }
+.social-nav-link {
+  float: none;
+  display: inline-block;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 479px) {
+  .social-nav-link {
+    display: none;
+  }
+}
 #main-nav-toggle {
   display: none;
 }
 #main-nav-toggle:before {
-  content: "\f0c9";
+  content: "\f002";
 }
 @media screen and (max-width: 479px) {
   #main-nav-toggle {
@@ -1199,8 +1212,20 @@ a.article-title:hover {
 .article-type-about .article-date {
   display: none;
 }
-.widget {
-  background: #fff !important;
+.social-nav-link {
+  font-size: 25px;
+  padding: 15px 8px;
+  width: 30px;
+  height: 30px;
+}
+.GitHub:before {
+  content: "\f09b";
+}
+.WeiBo:before {
+  content: "\f18a";
+}
+.Demo:before {
+  content: "\f128";
 }
 #nav-about-btn {
   display: none;
