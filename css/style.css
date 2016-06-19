@@ -1198,6 +1198,10 @@ a.article-title:hover {
   line-height: 1.6em;
   font-size: 0.85em;
 }
+.article-type-links .article-date,
+.article-type-about .article-date {
+  display: none;
+}
 @media screen and (max-width: 479px) {
   #header {
     height: 50px;

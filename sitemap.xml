@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iwuly.com/links/index.html</loc>
+    <lastmod>2016-06-19T07:00:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/about/index.html</loc>
+    <lastmod>2016-06-19T07:00:39.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
     <lastmod>2016-06-19T05:48:55.000Z</lastmod>
   </url>
@@ -34,16 +44,6 @@
   <url>
     <loc>http://iwuly.com/2015/12/31/Written-in-2015/</loc>
     <lastmod>2016-06-18T15:22:07.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/links/index.html</loc>
-    <lastmod>2016-01-10T08:04:57.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/about/index.html</loc>
-    <lastmod>2016-01-10T08:01:38.000Z</lastmod>
   </url>
   
   <url>
