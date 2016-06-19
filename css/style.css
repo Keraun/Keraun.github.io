@@ -1206,6 +1206,18 @@ a.article-title:hover {
 .article-type-about .article-date {
   display: none;
 }
+#nav-about-btn {
+  display: none;
+}
+#nav-about-btn img {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-top: 10px;
+}
 @media screen and (max-width: 479px) {
   #header {
     height: 50px;
@@ -1273,6 +1285,12 @@ a.article-title:hover {
   }
   .mobile-nav-link {
     padding-left: 50px !important;
+  }
+  #nav-about-btn {
+    display: block;
+  }
+  #sub-nav {
+    margin-right: 0px;
   }
 }
 .article-entry pre,
