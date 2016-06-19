@@ -1261,6 +1261,12 @@ a.article-title:hover {
   .article-date {
     margin-top: 8px;
   }
+  #mobile-nav {
+    padding-top: 50px;
+  }
+  .mobile-nav-link {
+    padding-left: 50px !important;
+  }
 }
 .article-entry pre,
 .article-entry .highlight {

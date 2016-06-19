@@ -3,6 +3,25 @@
 
 
     
+  <url>
+    <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
+    <lastmod>2016-06-19T07:10:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>web 实时通信与跨文档通信</title>
+        <pubTime>2016-01-20T07:20:07.000Z</pubTime>
+        
+        <tag>web 实时通信</tag>
+         
+        <tag>跨域</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
     
     
   <url>
@@ -16,25 +35,6 @@
         <tag>观察者模式</tag>
          
         <tag>设计模式</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
-    <lastmod>2016-06-19T04:46:57.000Z</lastmod>
-    <data>
-        <display>
-        <title>web 实时通信与跨文档通信</title>
-        <pubTime>2016-01-20T07:20:07.000Z</pubTime>
-        
-        <tag>web 实时通信</tag>
-         
-        <tag>跨域</tag>
          
          
            
