@@ -187,6 +187,9 @@ body {
     margin: 0 0.833333333333333%;
   }
 }
+.outer {
+  background: transparent;
+}
 .article-date,
 .article-category-link,
 .archive-year,
@@ -753,14 +756,15 @@ a.article-title:hover {
   clear: both;
 }
 .article-footer a {
-  color: #999;
+  color: #fff;
   text-decoration: none;
 }
 .article-footer a:hover {
-  color: #555;
+  color: #fff;
 }
 .article-footer .article-title-date {
   float: left;
+  color: #999;
   border-right: 1px solid #ddd;
   padding-right: 0.5em;
   margin-right: 0.5em;
@@ -768,9 +772,50 @@ a.article-title:hover {
 .article-tag-list-item {
   float: left;
   margin-right: 10px;
+  margin-left: 8px;
+}
+.article-tag-list-link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 10px;
+  background: #ba8f6c;
+  color: #fff;
+  height: 18px;
+  line-height: 18px;
+  float: left;
+  padding: 0 5px 0px 10px;
+  position: relative;
+  -webkit-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+/* margin: 5px 9px 5px 8px; */
+  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
 }
 .article-tag-list-link:before {
-  content: "#";
+  content: " ";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  border: 9px solid transparent;
+  border-right-color: #ba8f6c;
+  left: -18px;
+}
+.article-tag-list-link:after {
+  content: " ";
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  -webkit-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
+  position: absolute;
+  top: 7px;
+  left: 2px;
 }
 .article-comment-link {
   float: right;
@@ -1351,6 +1396,26 @@ pre .javascript .function {
     float: left;
     width: 23.333333333333332%;
     margin: 0 0.833333333333333%;
+  }
+}
+@media screen and (max-width: 479px) {
+  #sidebar {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  #sidebar {
+    display: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .outer {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .outer {
+    padding: 0;
   }
 }
 .widget-wrap {

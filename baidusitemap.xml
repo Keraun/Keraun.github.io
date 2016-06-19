@@ -4,6 +4,84 @@
 
     
   <url>
+    <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
+    <lastmod>2016-06-19T04:46:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>web 实时通信与跨文档通信</title>
+        <pubTime>2016-01-20T07:20:07.000Z</pubTime>
+        
+        <tag>web 实时通信</tag>
+         
+        <tag>跨域</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
+    <lastmod>2016-06-19T04:46:51.000Z</lastmod>
+    <data>
+        <display>
+        <title>重绘(redraw)和重排(reflow)</title>
+        <pubTime>2014-09-06T12:26:04.000Z</pubTime>
+        
+        <tag>重排</tag>
+         
+        <tag>重绘</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
+    <lastmod>2016-06-19T04:46:42.000Z</lastmod>
+    <data>
+        <display>
+        <title>设计模式之观察者模式</title>
+        <pubTime>2016-01-03T15:27:09.000Z</pubTime>
+        
+        <tag>发布/订阅者模式</tag>
+         
+        <tag>观察者模式</tag>
+         
+        <tag>设计模式</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
+    <lastmod>2016-06-19T04:46:38.000Z</lastmod>
+    <data>
+        <display>
+        <title>Ajax</title>
+        <pubTime>2015-02-01T13:05:54.000Z</pubTime>
+        
+        <tag>Ajax</tag>
+         
+        <tag>javaScript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://iwuly.com/2016/02/12/mongodb-base/</loc>
     <lastmod>2016-06-18T18:26:14.000Z</lastmod>
     <data>
@@ -40,25 +118,6 @@
 
     
   <url>
-    <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
-    <lastmod>2016-06-18T15:35:13.000Z</lastmod>
-    <data>
-        <display>
-        <title>Study notes: Ajax</title>
-        <pubTime>2015-02-01T13:05:54.000Z</pubTime>
-        
-        <tag>Ajax</tag>
-         
-        <tag>javaScript</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://iwuly.com/2015/12/31/Written-in-2015/</loc>
     <lastmod>2016-06-18T15:22:07.000Z</lastmod>
     <data>
@@ -77,66 +136,7 @@
     </url>
 
     
-  <url>
-    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
-    <lastmod>2016-06-18T15:21:45.000Z</lastmod>
-    <data>
-        <display>
-        <title>Study notes: 设计模式之观察者模式</title>
-        <pubTime>2016-01-03T15:27:09.000Z</pubTime>
-        
-        <tag>发布/订阅者模式</tag>
-         
-        <tag>观察者模式</tag>
-         
-        <tag>设计模式</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
-  <url>
-    <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
-    <lastmod>2016-06-18T15:21:22.000Z</lastmod>
-    <data>
-        <display>
-        <title>Study notes: web 实时通信与跨文档通信</title>
-        <pubTime>2016-01-20T07:20:07.000Z</pubTime>
-        
-        <tag>web 实时通信</tag>
-         
-        <tag>跨域</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-  <url>
-    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
-    <lastmod>2016-01-07T13:39:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>Study notes: 重绘(redraw)和重排(reflow)</title>
-        <pubTime>2014-09-06T12:26:04.000Z</pubTime>
-        
-        <tag>重排</tag>
-         
-        <tag>重绘</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
     
     
     
