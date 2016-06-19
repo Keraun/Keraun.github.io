@@ -192,7 +192,9 @@ html {
 }
 html,
 body {
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: auto;
+  webkit-overflow-scrolling: touch; /* ios5+ */
 }
 .outer {
   background: transparent;
