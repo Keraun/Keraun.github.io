@@ -1227,7 +1227,9 @@ a.article-title:hover {
   #main-nav-toggle {
     margin-left: 10px;
   }
-  .article-type-post {
+  .article-type-post,
+  .article-type-links,
+  .article-type-about {
     margin: 5px 5px 0;
   }
   .article-share-link {
@@ -1236,8 +1238,24 @@ a.article-title:hover {
   #footer {
     display: none;
   }
-  #page-nav {
+  #page-nav,
+  .archives-wrap {
     margin: 10px 5px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .archive-article-inner {
+    margin-bottom: 0px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid #ddd;
+  }
+  .article-nav-link-wrap {
+    margin-top: 15px;
+  }
+  .article-date {
+    margin-top: 8px;
   }
 }
 .article-entry pre,
