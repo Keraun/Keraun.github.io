@@ -1231,6 +1231,7 @@ a.article-title:hover {
   }
   #nav-search-btn {
     margin-right: 10px;
+    display: none;
   }
   #main-nav-toggle {
     margin-left: 10px;
