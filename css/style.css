@@ -453,7 +453,7 @@ body {
   display: none;
 }
 #main-nav-toggle:before {
-  content: "\f002";
+  content: "\f03a";
 }
 @media screen and (max-width: 479px) {
   #main-nav-toggle {
