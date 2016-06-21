@@ -134,4 +134,9 @@
 
     $container.removeClass('mobile-nav-on');
   });
+/*
+  $('.btn_shang').click(function () {
+    $('.alipay-er').addClass('alipay-er-active');
+  })
+  */
 })(jQuery);
