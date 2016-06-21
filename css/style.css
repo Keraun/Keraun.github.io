@@ -1239,7 +1239,50 @@ a.article-title:hover {
   margin-right: 10px;
   margin-top: 10px;
 }
+.btn_shang_box {
+  display: none;
+  text-align: center;
+  margin: 50px 0;
+  position: relative;
+}
+.btn_shang_box .alipay-er {
+  position: fixed;
+  -webkit-transition: top 1s, opacity 1s;
+  -moz-transition: top 1s, opacity 1s;
+  -ms-transition: top 1s, opacity 1s;
+  transition: top 1s, opacity 1s;
+  display: none;
+  top: 50%;
+  width: 300px;
+  opacity: 0;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -200px;
+}
+.btn_shang_box .alipay-er-active {
+  display: block;
+  opacity: 1;
+  z-index: 99;
+}
+.btn_shang_box .aplipay {
+  width: 100%;
+}
+.btn_shang_box .btn_shang {
+  display: inline-block;
+  background: url("./images/longwb_btn.png") no-repeat;
+  overflow: hidden;
+  text-indent: -999px;
+  width: 62px;
+  height: 62px;
+  background-position: 0 -100px;
+}
+.btn_shang_box .btn_shang:hover {
+  background-position: 0 -170px;
+}
 @media screen and (max-width: 479px) {
+  .btn_shang_box {
+    display: none;
+  }
   #header {
     height: 50px;
   }
