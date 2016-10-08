@@ -109,7 +109,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: {"position":"right","display":"post"},
+    sidebar: {"position":"top","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -127,25 +127,13 @@
   <title> 平凡之路—写在2015年的尾巴 | 积叶草堂 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+
+<body class="sidebar-position-top" itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
 
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-right page-post-detail ">
+  <div class="container one-collumn  page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -159,7 +147,7 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle">不卑不亢 踏实进取</p>
+  <p class="site-subtitle" style="display:none;">不卑不亢 踏实进取</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -170,11 +158,11 @@
   </button>
 </div>
 
-<nav class="site-nav">
+<nav class="site-nav clearfix">
   
 
   
-    <ul id="menu" class="menu">
+    <ul id="menu" class="menu clearfix">
       
         
         <li class="menu-item menu-item-home">
@@ -203,6 +191,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -248,7 +246,7 @@
     </header>
 
     <main id="main" class="main">
-      <div class="main-inner">
+      <div class="main-inner clearfix">
         <div class="content-wrap">
           <div id="content" class="content">
             
@@ -294,6 +292,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2015/12/31/Written-in-2015/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/31/Written-in-2015/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -381,16 +386,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/02/01/ajax001/" rel="next" title="Ajax">
-                <i class="fa fa-chevron-left"></i> Ajax
+              <a href="/2015/02/01/ajax001/" rel="next" title="从零天梯:Ajax浅析">
+                <i class="fa fa-chevron-left"></i> 从零天梯:Ajax浅析
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/01/03/Design-Patterns-Observer/" rel="prev" title="设计模式之观察者模式">
-                设计模式之观察者模式 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/01/03/Design-Patterns-Observer/" rel="prev" title="从零天梯:设计模式之观察者模式">
+                从零天梯:设计模式之观察者模式 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -416,6 +421,10 @@
 
           
   <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2015/12/31/Written-in-2015/"
+           data-title="平凡之路—写在2015年的尾巴" data-url="http://iwuly.com/2015/12/31/Written-in-2015/">
+      </div>
     
   </div>
 
@@ -454,7 +463,7 @@
                src="/images/avatar.JPG"
                alt="Keraun" />
           <p class="site-author-name" itemprop="name">Keraun</p>
-          <p class="site-description motion-element" itemprop="description">写作虽在一时,积累材料却在平时,没有持之以恒的积累和丰富的储备,要想写好文章是非常困难的.</p>
+          <p class="site-description motion-element" itemprop="description">一个比普通人还普通的普通人</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -501,7 +510,7 @@
               <span class="links-of-author-item">
                 <a href="http://weibo.com/AntelopeWu" target="_blank" title="WeiBo">
                   
-                    <i class="fa fa-fw fa-globe"></i>
+                    <i class="fa fa-fw fa-weibo"></i>
                   
                   WeiBo
                 </a>
@@ -510,7 +519,7 @@
               <span class="links-of-author-item">
                 <a href="http://iwuly.com/snippets" target="_blank" title="Demo">
                   
-                    <i class="fa fa-fw fa-globe"></i>
+                    <i class="fa fa-fw fa-flask"></i>
                   
                   Demo
                 </a>
@@ -523,6 +532,44 @@
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-link"></i>
+              友链
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.imochen.com/" title="墨尘" target="_blank">墨尘</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://dctxf.com/" title="门口摔倒的老大爷" target="_blank">门口摔倒的老大爷</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://chayangge.com/" title="插秧哥" target="_blank">插秧哥</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://mybulesea.github.io/" title="深蓝" target="_blank">深蓝</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://indexof.site/" title="Flyover" target="_blank">Flyover</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://tostring.site/" title="前端小强" target="_blank">前端小强</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://guowenfh.github.io/" title="三省吾身丶丶" target="_blank">三省吾身丶丶</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
       </section>
@@ -656,13 +703,34 @@
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"iwuly"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
+
+
   
   
 
@@ -671,6 +739,15 @@
   
 
   
+  
+
+
+
+
+
+
+
+
 
 </body>
 </html>

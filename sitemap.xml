@@ -2,6 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iwuly.com/about/index.html</loc>
+    <lastmod>2016-10-08T15:55:56.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
+    <lastmod>2016-10-08T15:22:47.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
+    <lastmod>2016-10-08T15:22:37.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
+    <lastmod>2016-10-08T15:22:26.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
+    <lastmod>2016-10-08T15:22:20.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/2014/09/02/Hello/</loc>
+    <lastmod>2016-10-08T15:21:35.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/tags/index.html</loc>
+    <lastmod>2016-10-08T09:07:12.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://iwuly.com/categories/index.html</loc>
+    <lastmod>2016-10-08T09:06:50.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://iwuly.com/2015/12/31/Written-in-2015/</loc>
     <lastmod>2016-10-07T16:18:33.000Z</lastmod>
   </url>
@@ -17,33 +57,8 @@
   </url>
   
   <url>
-    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
-    <lastmod>2016-06-19T09:30:31.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://iwuly.com/2016/01/28/pit-in-mobile-development/</loc>
     <lastmod>2016-06-19T09:30:15.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
-    <lastmod>2016-06-19T07:10:38.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/about/index.html</loc>
-    <lastmod>2016-06-19T07:00:39.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
-    <lastmod>2016-06-19T05:48:55.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
-    <lastmod>2016-06-19T04:46:38.000Z</lastmod>
   </url>
   
   <url>
@@ -52,18 +67,8 @@
   </url>
   
   <url>
-    <loc>http://iwuly.com/tags/index.html</loc>
-    <lastmod>2015-12-22T12:06:43.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://iwuly.com/archive/index.html</loc>
     <lastmod>2015-12-22T12:02:13.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/2014/09/02/Hello/</loc>
-    <lastmod>2015-11-29T10:29:49.000Z</lastmod>
   </url>
   
 </urlset>

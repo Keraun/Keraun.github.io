@@ -89,14 +89,14 @@
 <meta name="description" content="临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,功能类似于微信朋友圈(能发状态、点赞、评论&amp;amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.
 1 什么是实时通信实时通信: 在网络连接的时候,需要及时的把服务端上的消息回传到消息。比如在线游戏、微博、电子邮件等。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="web 实时通信与跨文档通信">
+<meta property="og:title" content="从零天梯:web 实时通信与跨文档通信">
 <meta property="og:url" content="http://iwuly.com/2016/01/20/web-socket/index.html">
 <meta property="og:site_name" content="积叶草堂">
 <meta property="og:description" content="临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,功能类似于微信朋友圈(能发状态、点赞、评论&amp;amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.
 1 什么是实时通信实时通信: 在网络连接的时候,需要及时的把服务端上的消息回传到消息。比如在线游戏、微博、电子邮件等。">
-<meta property="og:updated_time" content="2016-06-19T07:10:38.000Z">
+<meta property="og:updated_time" content="2016-10-08T15:22:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="web 实时通信与跨文档通信">
+<meta name="twitter:title" content="从零天梯:web 实时通信与跨文档通信">
 <meta name="twitter:description" content="临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,功能类似于微信朋友圈(能发状态、点赞、评论&amp;amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.
 1 什么是实时通信实时通信: 在网络连接的时候,需要及时的把服务端上的消息回传到消息。比如在线游戏、微博、电子邮件等。">
 
@@ -106,7 +106,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     scheme: 'Pisces',
-    sidebar: {"position":"right","display":"post"},
+    sidebar: {"position":"top","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -121,28 +121,16 @@
 
   <link rel="canonical" href="http://iwuly.com/2016/01/20/web-socket/"/>
 
-  <title> web 实时通信与跨文档通信 | 积叶草堂 </title>
+  <title> 从零天梯:web 实时通信与跨文档通信 | 积叶草堂 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+
+<body class="sidebar-position-top" itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
 
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-right page-post-detail ">
+  <div class="container one-collumn  page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -156,7 +144,7 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle">不卑不亢 踏实进取</p>
+  <p class="site-subtitle" style="display:none;">不卑不亢 踏实进取</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -167,11 +155,11 @@
   </button>
 </div>
 
-<nav class="site-nav">
+<nav class="site-nav clearfix">
   
 
   
-    <ul id="menu" class="menu">
+    <ul id="menu" class="menu clearfix">
       
         
         <li class="menu-item menu-item-home">
@@ -200,6 +188,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -245,7 +243,7 @@
     </header>
 
     <main id="main" class="main">
-      <div class="main-inner">
+      <div class="main-inner clearfix">
         <div class="content-wrap">
           <div id="content" class="content">
             
@@ -271,7 +269,7 @@
             
             
               
-                web 实时通信与跨文档通信
+                从零天梯:web 实时通信与跨文档通信
               
             
           </h1>
@@ -291,6 +289,13 @@
           
 
           
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/01/20/web-socket/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/20/web-socket/" itemprop="commentsCount"></span>
+                </a>
+              </span>
             
           
 
@@ -447,8 +452,8 @@ Hidden IFrame(Forever IFrames)
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/03/Design-Patterns-Observer/" rel="next" title="设计模式之观察者模式">
-                <i class="fa fa-chevron-left"></i> 设计模式之观察者模式
+              <a href="/2016/01/03/Design-Patterns-Observer/" rel="next" title="从零天梯:设计模式之观察者模式">
+                <i class="fa fa-chevron-left"></i> 从零天梯:设计模式之观察者模式
               </a>
             
           </div>
@@ -482,6 +487,10 @@ Hidden IFrame(Forever IFrames)
 
           
   <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/01/20/web-socket/"
+           data-title="从零天梯:web 实时通信与跨文档通信" data-url="http://iwuly.com/2016/01/20/web-socket/">
+      </div>
     
   </div>
 
@@ -520,7 +529,7 @@ Hidden IFrame(Forever IFrames)
                src="/images/avatar.JPG"
                alt="Keraun" />
           <p class="site-author-name" itemprop="name">Keraun</p>
-          <p class="site-description motion-element" itemprop="description">写作虽在一时,积累材料却在平时,没有持之以恒的积累和丰富的储备,要想写好文章是非常困难的.</p>
+          <p class="site-description motion-element" itemprop="description">一个比普通人还普通的普通人</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -567,7 +576,7 @@ Hidden IFrame(Forever IFrames)
               <span class="links-of-author-item">
                 <a href="http://weibo.com/AntelopeWu" target="_blank" title="WeiBo">
                   
-                    <i class="fa fa-fw fa-globe"></i>
+                    <i class="fa fa-fw fa-weibo"></i>
                   
                   WeiBo
                 </a>
@@ -576,7 +585,7 @@ Hidden IFrame(Forever IFrames)
               <span class="links-of-author-item">
                 <a href="http://iwuly.com/snippets" target="_blank" title="Demo">
                   
-                    <i class="fa fa-fw fa-globe"></i>
+                    <i class="fa fa-fw fa-flask"></i>
                   
                   Demo
                 </a>
@@ -589,6 +598,44 @@ Hidden IFrame(Forever IFrames)
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-link"></i>
+              友链
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.imochen.com/" title="墨尘" target="_blank">墨尘</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://dctxf.com/" title="门口摔倒的老大爷" target="_blank">门口摔倒的老大爷</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://chayangge.com/" title="插秧哥" target="_blank">插秧哥</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://mybulesea.github.io/" title="深蓝" target="_blank">深蓝</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://indexof.site/" title="Flyover" target="_blank">Flyover</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://tostring.site/" title="前端小强" target="_blank">前端小强</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://guowenfh.github.io/" title="三省吾身丶丶" target="_blank">三省吾身丶丶</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
       </section>
@@ -722,13 +769,34 @@ Hidden IFrame(Forever IFrames)
 
   
 
+  
+    
+  
 
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"iwuly"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
 
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
   
 
 
 
 
+
+
   
   
 
@@ -737,6 +805,15 @@ Hidden IFrame(Forever IFrames)
   
 
   
+  
+
+
+
+
+
+
+
+
 
 </body>
 </html>
