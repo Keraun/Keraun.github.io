@@ -189,7 +189,7 @@
 .fa-search:before {
   content: "\f002";
 }
-.fa-envelope-o:before {
+.fa-message,.fa-envelope-o:before {
   content: "\f003";
 }
 .fa-heart:before {
