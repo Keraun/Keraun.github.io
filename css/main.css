@@ -984,9 +984,6 @@ pre .javascript .function {
   line-height: inherit;
   border-bottom: 1px solid transparent;
   transition-property: border-color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
 }
 .menu .menu-item a:hover,
 .menu-item-active a {
@@ -996,7 +993,7 @@ pre .javascript .function {
   margin-right: 5px;
 }
 .use-motion .menu-item {
-  opacity: 0;
+  opacity: 1;
 }
 .post-body {
   font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
@@ -1551,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1cffb5;
+  background: #0ec636;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2349,9 +2346,6 @@ body {
   text-align: left;
   line-height: inherit;
   transition-property: background-color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
 }
 .menu .menu-item a:hover,
 .menu-item-active a {
@@ -2464,7 +2458,7 @@ body {
   display: inline-block;
   margin-right: 0;
   margin-bottom: 0;
-  padding: 0 5px;
+  padding: 0 3px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -2516,7 +2510,7 @@ body {
   display: inline-block;
   margin-right: 0;
   margin-bottom: 0;
-  padding: 0 5px;
+  padding: 0 3px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -2677,10 +2671,14 @@ body {
     line-height: 100%;
     background: #fff;
   }
-  .custom-logo-site-title a {
+  .custom-logo-site-title .brand {
+    opacity: 1;
     height: 100%;
+    background: url("/images/jiyecaotang.png") no-repeat center;
+    background-size: contain;
   }
   .custom-logo-site-title .site-title {
+    font-size: 0;
     line-height: 47px;
     color: #fa7d3c;
   }
