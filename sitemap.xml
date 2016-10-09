@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iwuly.com/about/index.html</loc>
+    <lastmod>2016-10-09T10:00:27.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://iwuly.com/2016/07/01/oneyear/</loc>
     <lastmod>2016-10-09T09:47:34.000Z</lastmod>
   </url>
@@ -9,11 +14,6 @@
   <url>
     <loc>http://iwuly.com/message/index.html</loc>
     <lastmod>2016-10-09T09:43:10.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://iwuly.com/about/index.html</loc>
-    <lastmod>2016-10-09T09:31:03.000Z</lastmod>
   </url>
   
   <url>

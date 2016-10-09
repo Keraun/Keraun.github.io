@@ -1021,6 +1021,7 @@ pre .javascript .function {
 .post-sticky-flag {
   display: inline-block;
   font-size: 16px;
+  vertical-align: middle;
   -ms-transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -1224,9 +1225,9 @@ pre .javascript .function {
   display: inline-block;
   position: relative;
   color: #555;
+  vertical-align: middle;
   border-bottom: none;
   line-height: 1.2;
-  vertical-align: top;
 }
 .posts-expand .post-title-link::before {
   content: "";
@@ -1547,7 +1548,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #83ffc3;
+  background: #adbb7e;
 }
 .links-of-blogroll {
   font-size: 13px;
