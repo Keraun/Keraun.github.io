@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="html,重排," />
+  <meta name="keywords" content="mongodb," />
 
 
 
@@ -86,19 +86,19 @@
 
 
 
-<meta name="description" content="记忆关键词：重绘、重排、渲染、DOM树、性能
-过程:  ① HTML文档-&amp;gt;② DOM树 -&amp;gt;③ 渲染树 -&amp;gt;④ 页面">
+<meta name="description" content="大过年捣鼓了下mongodb的安装与使用,收藏了一些好文,方便以后开发用到可以快速回忆.
+链接:Mac下安装MongoDB 及使用教程Mongodb Mac版的安装MongoDB基本使用Node.js操作MongoDB数据库MongoDB 常用指令nodejs+express+mongodb简单的例子">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从零天梯:重绘(redraw)和重排(reflow)">
-<meta property="og:url" content="http://iwuly.com/2014/09/06/redraw-reflow/index.html">
+<meta property="og:title" content="MongoDB 收藏夹">
+<meta property="og:url" content="http://iwuly.com/2016/02/12/天梯进阶/mongodb-base/index.html">
 <meta property="og:site_name" content="积叶草堂">
-<meta property="og:description" content="记忆关键词：重绘、重排、渲染、DOM树、性能
-过程:  ① HTML文档-&amp;gt;② DOM树 -&amp;gt;③ 渲染树 -&amp;gt;④ 页面">
-<meta property="og:updated_time" content="2016-10-08T15:22:20.000Z">
+<meta property="og:description" content="大过年捣鼓了下mongodb的安装与使用,收藏了一些好文,方便以后开发用到可以快速回忆.
+链接:Mac下安装MongoDB 及使用教程Mongodb Mac版的安装MongoDB基本使用Node.js操作MongoDB数据库MongoDB 常用指令nodejs+express+mongodb简单的例子">
+<meta property="og:updated_time" content="2016-06-18T18:26:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="从零天梯:重绘(redraw)和重排(reflow)">
-<meta name="twitter:description" content="记忆关键词：重绘、重排、渲染、DOM树、性能
-过程:  ① HTML文档-&amp;gt;② DOM树 -&amp;gt;③ 渲染树 -&amp;gt;④ 页面">
+<meta name="twitter:title" content="MongoDB 收藏夹">
+<meta name="twitter:description" content="大过年捣鼓了下mongodb的安装与使用,收藏了一些好文,方便以后开发用到可以快速回忆.
+链接:Mac下安装MongoDB 及使用教程Mongodb Mac版的安装MongoDB基本使用Node.js操作MongoDB数据库MongoDB 常用指令nodejs+express+mongodb简单的例子">
 
 
 
@@ -119,9 +119,9 @@
 
 
 
-  <link rel="canonical" href="http://iwuly.com/2014/09/06/redraw-reflow/"/>
+  <link rel="canonical" href="http://iwuly.com/2016/02/12/天梯进阶/mongodb-base/"/>
 
-  <title> 从零天梯:重绘(redraw)和重排(reflow) | 积叶草堂 </title>
+  <title> MongoDB 收藏夹 | 积叶草堂 </title>
 </head>
 
 
@@ -249,7 +249,7 @@
             
             
               
-                从零天梯:重绘(redraw)和重排(reflow)
+                MongoDB 收藏夹
               
             
           </h1>
@@ -261,8 +261,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2014-09-06T20:26:04+08:00" content="2014-09-06">
-              2014-09-06
+            <time itemprop="dateCreated" datetime="2016-02-12T11:18:45+08:00" content="2016-02-12">
+              2016-02-12
             </time>
           </span>
 
@@ -272,8 +272,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2014/09/06/redraw-reflow/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2014/09/06/redraw-reflow/" itemprop="commentsCount"></span>
+                <a href="/2016/02/12/天梯进阶/mongodb-base/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/12/天梯进阶/mongodb-base/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -296,41 +296,8 @@
       
 
       
-        <p>记忆关键词：重绘、重排、渲染、DOM树、性能</p>
-<h3 id="u8FC7_u7A0B_3A"><a href="#u8FC7_u7A0B_3A" class="headerlink" title="过程:"></a>过程:</h3><p>  ① HTML文档-&gt;② DOM树 -&gt;③ 渲染树 -&gt;④ 页面<br><a id="more"></a></p>
-<h3 id="u89E3_u6790_3A"><a href="#u89E3_u6790_3A" class="headerlink" title="解析:"></a>解析:</h3><ul>
-<li>①-&gt;②:浏览器下载文档后根据HTML文档构建DOM树。<blockquote>
-<p>（在DOM树中，每一个HTML标签都有一个对应的节点，并且每一个文本也都会有一个对应的文本节点。 DOM树的根节点就是 documentElement，对应的是html标签。）</p>
-</blockquote>
-</li>
-<li>②-&gt;③:之后根据DOM元素的几何属性构建一棵用于渲染的树。<blockquote>
-<p>（对CSS代码中非法的语法她会直接忽略掉.解析CSS的时候会按照如下顺序来定义优先级：浏览器默认设置，用户设置，外链样式，内联样式，html中的style。）</p>
-</blockquote>
-</li>
-<li>③-&gt;④:当渲染树构建完成后，浏览器就可以将元素放置到正确的位置，再根据渲染树节点的样式属性绘制出页面。</li>
-</ul>
-<h3 id="u573A_u666F"><a href="#u573A_u666F" class="headerlink" title="场景"></a>场景</h3><ul>
-<li>引起重绘：一个节点元素外观的改变绘（visibility、outline、背景色等属性）</li>
-<li><p>引起重排：</p>
-<blockquote>
-<p>1.DOM元素的几何属性变化（宽高） （ps：可能引起子父节点、兄弟节点甚至整个文档的重新计算、性能代价昂贵）<br>2.DOM树的结构变化（节点的增删改查）<br>3.获取某些属性（offsetXXX、scrollXXX、clientXXX）<br>ps：在多次使用这些值时应进行缓存<br>4.改变元素的一些样式，调整浏览器窗口大小等等</p>
-</blockquote>
-<p>重排是更明显的一种改变，可以理解为渲染树需要重新计算;<br>重排的代价高于重绘。重排时会引起重绘。</p>
-</li>
-</ul>
-<h3 id="u4E3A_u4EC0_u4E48_u8981_u907F_u514D_u4F7F_u7528table_u505A_u5E03_u5C40_uFF1F"><a href="#u4E3A_u4EC0_u4E48_u8981_u907F_u514D_u4F7F_u7528table_u505A_u5E03_u5C40_uFF1F" class="headerlink" title="为什么要避免使用table做布局？"></a>为什么要避免使用table做布局？</h3><p>正常的流布局，对渲染树的计算通常只需要遍历一次就可以完成。但table及其内部元素除外，通常要花3倍的时间才能确定好其在渲染树中节点的属性。这也是为什么我们要避免使用table做布局的一个原因。</p>
-<h3 id="u9488_u5BF9_u51CF_u5C11_u91CD_u7ED8_u548C_u91CD_u6392_u7684_u4E00_u4E9B_u4F18_u5316_uFF1A"><a href="#u9488_u5BF9_u51CF_u5C11_u91CD_u7ED8_u548C_u91CD_u6392_u7684_u4E00_u4E9B_u4F18_u5316_uFF1A" class="headerlink" title="针对减少重绘和重排的一些优化："></a>针对减少重绘和重排的一些优化：</h3><ol>
-<li>将多次改变样式属性的操作合并成一次操作</li>
-<li>使操作次数多的元素脱离了文档流，它的变化不会影响到其他元素。</li>
-<li>在内存中多次操作节点，完成后再添加到文档中去。</li>
-<li>由于display属性为none的元素不在渲染树中，对隐藏的元素操作不会引发其他元素的重排。如果要对一个元素进行复杂的操作时，可以先隐藏它，操作完成后再显示。这样只在隐藏和显示时触发2次重排。</li>
-<li>在需要经常获取那些引起浏览器重排的属性值时，要缓存到变量。</li>
-</ol>
-<h3 id="u77E5_u8BC6_u5DE9_u56FA_uFF1A"><a href="#u77E5_u8BC6_u5DE9_u56FA_uFF1A" class="headerlink" title="知识巩固："></a>知识巩固：</h3><p>在前端如何实现一个表格的排序（尽可能减少重绘和重排的影响）。<br>以下是我个人的想法，如有考虑不周的情况，欢迎在评论区留言~大家一起进步~</p>
-<blockquote>
-<p>1.获取表格数据：获取鼠标点击的表头单元格的列号，遍历数据行，获取行内数据，以数组形式缓存起来<br>2.对数据排序：根据关键字对数组排序。<br>3.对排序好的数据进行字符串拼接。用一个变量保存拼接好的字符串内容。<br>4.清空tbody中的内容，插入已拼接好的内容。</p>
-</blockquote>
-<h3 id="u53C2_u8003_u6587_u6863_uFF1A"><a href="#u53C2_u8003_u6587_u6863_uFF1A" class="headerlink" title="参考文档："></a>参考文档：</h3><p><a href="http://kb.cnblogs.com/page/169820/" target="_blank" rel="external">http://kb.cnblogs.com/page/169820/</a><br><a href="http://blog.csdn.net/lihongxun945/article/details/37830667" target="_blank" rel="external">http://blog.csdn.net/lihongxun945/article/details/37830667</a></p>
+        <p>大过年捣鼓了下mongodb的安装与使用,收藏了一些好文,方便以后开发用到可以快速回忆.</p>
+<p>链接:<br><a href="https://segmentfault.com/a/1190000002547229#articleHeader4" target="_blank" rel="external">Mac下安装MongoDB 及使用教程</a><br><a href="http://jingyan.baidu.com/article/6fb756ecbfe474241858fb3b.html" target="_blank" rel="external">Mongodb Mac版的安装</a><br><a href="http://www.cnblogs.com/TankMa/archive/2011/06/08/2074947.html" target="_blank" rel="external">MongoDB基本使用</a><br><a href="https://segmentfault.com/a/1190000004057550" target="_blank" rel="external">Node.js操作MongoDB数据库</a><br><a href="https://segmentfault.com/a/1190000003717873" target="_blank" rel="external">MongoDB 常用指令</a><br><a href="http://my.oschina.net/chenhao901007/blog/312367" target="_blank" rel="external">nodejs+express+mongodb简单的例子</a></p>
 
       
     </div>
@@ -353,9 +320,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/html/" rel="tag">#html</a>
-          
-            <a href="/tags/重排/" rel="tag">#重排</a>
+            <a href="/tags/mongodb/" rel="tag">#mongodb</a>
           
         </div>
       
@@ -364,16 +329,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2014/09/02/Hello/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2016/01/28/天梯进阶/移动端开发中遇到的那些坑/" rel="next" title="移动端开发中遇到的那些坑">
+                <i class="fa fa-chevron-left"></i> 移动端开发中遇到的那些坑
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/02/01/ajax001/" rel="prev" title="从零天梯:Ajax浅析">
-                从零天梯:Ajax浅析 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/03/01/从零天梯系列/JS练习题整理/" rel="prev" title="从零天梯:JS练习题整理">
+                从零天梯:JS练习题整理 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -400,8 +365,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2014/09/06/redraw-reflow/"
-           data-title="从零天梯:重绘(redraw)和重排(reflow)" data-url="http://iwuly.com/2014/09/06/redraw-reflow/">
+      <div class="ds-thread" data-thread-key="2016/02/12/天梯进阶/mongodb-base/"
+           data-title="MongoDB 收藏夹" data-url="http://iwuly.com/2016/02/12/天梯进阶/mongodb-base/">
       </div>
     
   </div>
@@ -446,7 +411,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-count">10</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -456,7 +421,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -559,7 +524,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u8FC7_u7A0B_3A"><span class="nav-number">1.</span> <span class="nav-text">过程:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u89E3_u6790_3A"><span class="nav-number">2.</span> <span class="nav-text">解析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u573A_u666F"><span class="nav-number">3.</span> <span class="nav-text">场景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u4E3A_u4EC0_u4E48_u8981_u907F_u514D_u4F7F_u7528table_u505A_u5E03_u5C40_uFF1F"><span class="nav-number">4.</span> <span class="nav-text">为什么要避免使用table做布局？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u9488_u5BF9_u51CF_u5C11_u91CD_u7ED8_u548C_u91CD_u6392_u7684_u4E00_u4E9B_u4F18_u5316_uFF1A"><span class="nav-number">5.</span> <span class="nav-text">针对减少重绘和重排的一些优化：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u77E5_u8BC6_u5DE9_u56FA_uFF1A"><span class="nav-number">6.</span> <span class="nav-text">知识巩固：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#u53C2_u8003_u6587_u6863_uFF1A"><span class="nav-number">7.</span> <span class="nav-text">参考文档：</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>

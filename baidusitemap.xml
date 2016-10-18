@@ -3,9 +3,49 @@
 
 
     
+  <url>
+    <loc>http://iwuly.com/2016/03/01/%E4%BB%8E%E9%9B%B6%E5%A4%A9%E6%A2%AF%E7%B3%BB%E5%88%97/JS%E7%BB%83%E4%B9%A0%E9%A2%98%E6%95%B4%E7%90%86/</loc>
+    <lastmod>2016-10-18T16:11:57.000Z</lastmod>
+    <data>
+        <display>
+        <title>从零天梯:JS练习题整理</title>
+        <pubTime>2016-03-01T13:05:54.000Z</pubTime>
+        
+        <tag>javaScript</tag>
+         
+        <tag>作用域</tag>
+         
+        <tag>闭包</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
     
   <url>
-    <loc>http://iwuly.com/2016/07/01/oneyear/</loc>
+    <loc>http://iwuly.com/2015/02/01/%E4%BB%8E%E9%9B%B6%E5%A4%A9%E6%A2%AF%E7%B3%BB%E5%88%97/Ajax%E6%B5%85%E6%9E%90/</loc>
+    <lastmod>2016-10-18T15:34:43.000Z</lastmod>
+    <data>
+        <display>
+        <title>从零天梯:Ajax浅析</title>
+        <pubTime>2015-02-01T13:05:54.000Z</pubTime>
+        
+        <tag>Ajax</tag>
+         
+        <tag>javaScript</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>http://iwuly.com/2016/07/01/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/%E4%B8%80%E5%B9%B4%E5%9B%9E%E5%BF%86%E5%BD%95/</loc>
     <lastmod>2016-10-09T09:47:34.000Z</lastmod>
     <data>
         <display>
@@ -23,26 +63,7 @@
     
     
   <url>
-    <loc>http://iwuly.com/2015/02/01/ajax001/</loc>
-    <lastmod>2016-10-08T15:22:47.000Z</lastmod>
-    <data>
-        <display>
-        <title>从零天梯:Ajax浅析</title>
-        <pubTime>2015-02-01T13:05:54.000Z</pubTime>
-        
-        <tag>Ajax</tag>
-         
-        <tag>javaScript</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://iwuly.com/2016/01/03/Design-Patterns-Observer/</loc>
+    <loc>http://iwuly.com/2016/01/03/%E5%A4%A9%E6%A2%AF%E8%BF%9B%E9%98%B6/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2016-10-08T15:22:39.000Z</lastmod>
     <data>
         <display>
@@ -61,7 +82,7 @@
 
     
   <url>
-    <loc>http://iwuly.com/2016/01/20/web-socket/</loc>
+    <loc>http://iwuly.com/2016/01/20/%E4%BB%8E%E9%9B%B6%E5%A4%A9%E6%A2%AF%E7%B3%BB%E5%88%97/web%E5%AE%9E%E6%97%B6%E9%80%9A%E4%BF%A1%E4%B8%8E%E8%B7%A8%E6%96%87%E6%A1%A3%E9%80%9A%E4%BF%A1/</loc>
     <lastmod>2016-10-08T15:22:26.000Z</lastmod>
     <data>
         <display>
@@ -80,7 +101,7 @@
 
     
   <url>
-    <loc>http://iwuly.com/2014/09/06/redraw-reflow/</loc>
+    <loc>http://iwuly.com/2014/09/06/%E4%BB%8E%E9%9B%B6%E5%A4%A9%E6%A2%AF%E7%B3%BB%E5%88%97/%E9%87%8D%E7%BB%98%E5%92%8C%E9%87%8D%E6%8E%92/</loc>
     <lastmod>2016-10-08T15:22:20.000Z</lastmod>
     <data>
         <display>
@@ -116,7 +137,7 @@
     
     
   <url>
-    <loc>http://iwuly.com/2015/12/31/Written-in-2015/</loc>
+    <loc>http://iwuly.com/2015/12/31/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4/%E5%86%99%E5%9C%A82015%E5%B9%B4%E7%9A%84%E5%B0%BE%E5%B7%B4/</loc>
     <lastmod>2016-10-07T16:18:33.000Z</lastmod>
     <data>
         <display>
@@ -136,7 +157,7 @@
     
     
   <url>
-    <loc>http://iwuly.com/2016/01/28/pit-in-mobile-development/</loc>
+    <loc>http://iwuly.com/2016/01/28/%E5%A4%A9%E6%A2%AF%E8%BF%9B%E9%98%B6/%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%82%A3%E4%BA%9B%E5%9D%91/</loc>
     <lastmod>2016-06-19T09:30:15.000Z</lastmod>
     <data>
         <display>
@@ -155,7 +176,7 @@
 
     
   <url>
-    <loc>http://iwuly.com/2016/02/12/mongodb-base/</loc>
+    <loc>http://iwuly.com/2016/02/12/%E5%A4%A9%E6%A2%AF%E8%BF%9B%E9%98%B6/mongodb-base/</loc>
     <lastmod>2016-06-18T18:26:14.000Z</lastmod>
     <data>
         <display>
