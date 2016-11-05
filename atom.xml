@@ -4,7 +4,7 @@
   <subtitle><![CDATA[不卑不亢 踏实进取]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://iwuly.com/"/>
-  <updated>2016-11-05T08:44:29.000Z</updated>
+  <updated>2016-11-05T08:55:31.000Z</updated>
   <id>http://iwuly.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://iwuly.com/2016/09/06/%E4%BB%8E%E9%9B%B6%E5%A4%A9%E6%A2%AF%E7%B3%BB%E5%88%97/%E4%B8%80%E6%8E%A2WebSocket%E5%8D%8F%E8%AE%AE/"/>
     <id>http://iwuly.com/2016/09/06/从零天梯系列/一探WebSocket协议/</id>
     <published>2016-09-06T11:33:01.000Z</published>
-    <updated>2016-11-05T08:44:29.000Z</updated>
+    <updated>2016-11-05T08:55:31.000Z</updated>
     <content type="html"><![CDATA[<h3 id="u5199_u5728_u524D_u9762"><a href="#u5199_u5728_u524D_u9762" class="headerlink" title="写在前面"></a>写在前面</h3><p>一次偶然的机会,我被派往北京出差，去支援在一线浴血奋战的战友。项目涉及WebSocket，用来实现WEB浏览器和打印驱动之间的双向通信。开始编码之前，我收集了有关WebSocket的资料，甚至去阅读了相关的<a href="https://tools.ietf.org/html/rfc6455" target="_blank" rel="external">RFC文档</a>。阅读资料的同时，我整理了相关笔记，希望给阅读者带来一些帮助~好啦，让我们开始阅读正文吧~<br><a id="more"></a></p>
 <h3 id="1-_WebSocket_u51E0_u95EE"><a href="#1-_WebSocket_u51E0_u95EE" class="headerlink" title="1. WebSocket几问"></a>1. WebSocket几问</h3><p>如果你之前对WebSocket协议有些了解，那么可以尝试回答以下问题：</p>
 <ol>
