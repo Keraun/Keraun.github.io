@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="积叶草堂">
 <meta property="og:description" content="临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,功能类似于微信朋友圈(能发状态、点赞、评论&amp;amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.
 1 什么是实时通信实时通信: 在网络连接的时候,需要及时的把服务端上的消息回传到消息。比如在线游戏、微博、电子邮件等。">
-<meta property="og:updated_time" content="2016-10-08T15:22:26.000Z">
+<meta property="og:updated_time" content="2016-11-05T03:52:58.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从零天梯:web 实时通信与跨文档通信">
 <meta name="twitter:description" content="临近年底越忙碌,前段时间为年会活动开发一个项目,不想到需求越加越多最后写了个webapp,功能类似于微信朋友圈(能发状态、点赞、评论&amp;amp;回复）,开发过程中填了不少坑,今天聊一聊消息实时通信那些事,整理了一些学习笔记.
@@ -310,7 +310,7 @@ Hidden IFrame(Forever IFrames)
 <li>WebSocket</li>
 </ol>
 <hr>
-<h4 id="2__u5B9E_u65F6web_u7684_u6F14_u53D8"><a href="#2__u5B9E_u65F6web_u7684_u6F14_u53D8" class="headerlink" title="2 实时web的演变"></a>2 实时web的演变</h4><h5 id="Ajax_u76DB_u884C_u4E4B_u524D"><a href="#Ajax_u76DB_u884C_u4E4B_u524D" class="headerlink" title="Ajax盛行之前"></a>Ajax盛行之前</h5><p><strong>自动刷新整页使页面呈现最新内容:</strong></p>
+<h3 id="2__u5B9E_u65F6web_u7684_u6F14_u53D8"><a href="#2__u5B9E_u65F6web_u7684_u6F14_u53D8" class="headerlink" title="2 实时web的演变"></a>2 实时web的演变</h3><h4 id="Ajax_u76DB_u884C_u4E4B_u524D"><a href="#Ajax_u76DB_u884C_u4E4B_u524D" class="headerlink" title="Ajax盛行之前"></a>Ajax盛行之前</h4><p><strong>自动刷新整页使页面呈现最新内容:</strong></p>
 <ul>
 <li>设置meta页面自动刷新机制</li>
 </ul>
@@ -323,14 +323,14 @@ Hidden IFrame(Forever IFrames)
 <li>用户体验极差(每隔一段时间就刷新页面)</li>
 <li>流量浪费(整个页面刷新)</li>
 </ul>
-<h5 id="2-1__u8F6E_u8BE2_uFF08polling_uFF09"><a href="#2-1__u8F6E_u8BE2_uFF08polling_uFF09" class="headerlink" title="2.1 轮询（polling）"></a>2.1 轮询（polling）</h5><p><strong>原理:</strong>客户端定时轮询请求(setInterval)，服务器端立刻返回.</p>
+<h4 id="2-1__u8F6E_u8BE2_uFF08polling_uFF09"><a href="#2-1__u8F6E_u8BE2_uFF08polling_uFF09" class="headerlink" title="2.1 轮询（polling）"></a>2.1 轮询（polling）</h4><p><strong>原理:</strong>客户端定时轮询请求(setInterval)，服务器端立刻返回.</p>
 <p>示例代码:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">interval = setInterval(polling, <span class="number">1000</span>);<span class="comment">//1000为心跳值，每隔1s请求</span></span><br></pre></td></tr></table></figure></p>
 <ul>
 <li><strong>优点</strong><br>  简单易用,容易实现<br>  <strong>短链接</strong>(简单的ajax请求,可以使get、post，也可以是jsonp)<br>  服务器处理方便<br>  支持跨域(使用jsonp时)<br>  所有浏览器都支持<br>  每次请求,立刻返回</li>
 <li><strong>缺点</strong><br>  可能会出现延迟(每隔几秒模拟,并不能保证是实时消息)<br>  浪费流量(并不知道服务器有木有最新数据,要不断向服务器请求)<br>  建立大量链接,(用户数越多与服务器连接的请求也越多,服务器并发量大,处理变慢)</li>
 </ul>
 <p>微博未读微博数和未读消息（评论，@）就是用polling实现的。<br>应用场景：对实时性要求不高的应用，如新微博提示，评论提示，回复提示等。</p>
-<h5 id="2-2_Comet_uFF1A_u57FA_u4E8EHTTP_u957F_u8FDE_u63A5_u7684_u201C_u670D_u52A1_u5668_u63A8_u201D_u6280_u672F"><a href="#2-2_Comet_uFF1A_u57FA_u4E8EHTTP_u957F_u8FDE_u63A5_u7684_u201C_u670D_u52A1_u5668_u63A8_u201D_u6280_u672F" class="headerlink" title="2.2 Comet：基于HTTP长连接的“服务器推”技术"></a>2.2 Comet：基于HTTP长连接的“服务器推”技术</h5><p>(也有人叫做反向ajax)</p>
+<h4 id="2-2_Comet_uFF1A_u57FA_u4E8EHTTP_u957F_u8FDE_u63A5_u7684_u201C_u670D_u52A1_u5668_u63A8_u201D_u6280_u672F"><a href="#2-2_Comet_uFF1A_u57FA_u4E8EHTTP_u957F_u8FDE_u63A5_u7684_u201C_u670D_u52A1_u5668_u63A8_u201D_u6280_u672F" class="headerlink" title="2.2 Comet：基于HTTP长连接的“服务器推”技术"></a>2.2 Comet：基于HTTP长连接的“服务器推”技术</h4><p>(也有人叫做反向ajax)</p>
 <p><strong>原理:</strong>客户端发起连接,服务器端会阻塞请求（服务器端hold网络连接）直到有数据传递或超时（心跳时间）才返回.</p>
 <p>实现方式主要有2种:<strong>长轮询(Long Polling)</strong>和 <strong>流推送(Comet Streaming)</strong></p>
 <p>两种实现方式:</p>
@@ -359,7 +359,7 @@ Hidden IFrame(Forever IFrames)
 <p><strong>优点：</strong>客户端一次连接，服务器数据可多次推送。几乎所有支持iframe 的浏览器上都可用。<br><strong>缺点：</strong>不可跨域，错误处理可控性不强  </p>
 <p>流推送的应用场景：实时监控系统，即时聊天</p>
 <hr>
-<h5 id="http_u5B9E_u65F6_u901A_u4FE1_u7F3A_u9677"><a href="#http_u5B9E_u65F6_u901A_u4FE1_u7F3A_u9677" class="headerlink" title="http实时通信缺陷"></a>http实时通信缺陷</h5><p>http通信特点：</p>
+<h4 id="http_u5B9E_u65F6_u901A_u4FE1_u7F3A_u9677"><a href="#http_u5B9E_u65F6_u901A_u4FE1_u7F3A_u9677" class="headerlink" title="http实时通信缺陷"></a>http实时通信缺陷</h4><p>http通信特点：</p>
 <ul>
 <li>无状态连接（需要对每个客户端的连接维持）</li>
 <li>单向通信</li>
@@ -371,9 +371,9 @@ Hidden IFrame(Forever IFrames)
 <li>线路层协议有较高的开销，因为每个客户端-服务器消息都有一个HTTP头信息。</li>
 <li>客户端脚本被迫维护一个传出的连接到传入的连接的映射来跟踪回复。</li>
 </ul>
-<h4 id="3_websocket_u4ECB_u7ECD"><a href="#3_websocket_u4ECB_u7ECD" class="headerlink" title="3 websocket介绍"></a>3 websocket介绍</h4><h5 id="3-1_websocket_u7684_u8BDE_u751F"><a href="#3-1_websocket_u7684_u8BDE_u751F" class="headerlink" title="3.1 websocket的诞生"></a>3.1 websocket的诞生</h5><p>定义了一个浏览器和服务器之间的全双工的单一的socket连接取代现有的HTTP作为传输层的双向通信技术W3C将其纳入规范，写入HTML5版本</p>
-<h5 id="3-2_websocket_u63A5_u53E3"><a href="#3-2_websocket_u63A5_u53E3" class="headerlink" title="3.2 websocket接口"></a>3.2 websocket接口</h5><p>onopen 在WS客户端和WS服务器建立连接成功后调用<br>onmessage 在WS服务器给WS客户端发送数据时调用<br>onerror 如果连接失败，发送、接收数据失败或者处理数据出现错误，则会被调用<br>onclose 在WS客户端接收到WS服务器关闭时进行调用</p>
-<h5 id="3-3_websocket__u5B9E_u4F8B"><a href="#3-3_websocket__u5B9E_u4F8B" class="headerlink" title="3.3 websocket 实例"></a>3.3 websocket 实例</h5><p><strong>浏览器端实现</strong></p>
+<h3 id="3_websocket_u4ECB_u7ECD"><a href="#3_websocket_u4ECB_u7ECD" class="headerlink" title="3 websocket介绍"></a>3 websocket介绍</h3><h4 id="3-1_websocket_u7684_u8BDE_u751F"><a href="#3-1_websocket_u7684_u8BDE_u751F" class="headerlink" title="3.1 websocket的诞生"></a>3.1 websocket的诞生</h4><p>定义了一个浏览器和服务器之间的全双工的单一的socket连接取代现有的HTTP作为传输层的双向通信技术W3C将其纳入规范，写入HTML5版本</p>
+<h4 id="3-2_websocket_u63A5_u53E3"><a href="#3-2_websocket_u63A5_u53E3" class="headerlink" title="3.2 websocket接口"></a>3.2 websocket接口</h4><p>onopen 在WS客户端和WS服务器建立连接成功后调用<br>onmessage 在WS服务器给WS客户端发送数据时调用<br>onerror 如果连接失败，发送、接收数据失败或者处理数据出现错误，则会被调用<br>onclose 在WS客户端接收到WS服务器关闭时进行调用</p>
+<h4 id="3-3_websocket__u5B9E_u4F8B"><a href="#3-3_websocket__u5B9E_u4F8B" class="headerlink" title="3.3 websocket 实例"></a>3.3 websocket 实例</h4><p><strong>浏览器端实现</strong></p>
 <ol>
 <li>Websocket 实例化</li>
 <li>定义open\message\cloes\error事件</li>
@@ -385,20 +385,20 @@ Hidden IFrame(Forever IFrames)
 </ol>
 <p><strong>思考：如何做技术选型?</strong></p>
 <hr>
-<h4 id="4__u8DE8_u6587_u6863_u901A_u4FE1_u5B9E_u73B0_u65B9_u5F0F"><a href="#4__u8DE8_u6587_u6863_u901A_u4FE1_u5B9E_u73B0_u65B9_u5F0F" class="headerlink" title="4 跨文档通信实现方式"></a>4 跨文档通信实现方式</h4><h5 id="4-1_Window_u547D_u540D_u7A7A_u95F4_u8FDB_u884C_u4F20_u9012_uFF1A"><a href="#4-1_Window_u547D_u540D_u7A7A_u95F4_u8FDB_u884C_u4F20_u9012_uFF1A" class="headerlink" title="4.1 Window命名空间进行传递："></a>4.1 Window命名空间进行传递：</h5><p>window.name = “hello”;</p>
+<h3 id="4__u8DE8_u6587_u6863_u901A_u4FE1_u5B9E_u73B0_u65B9_u5F0F"><a href="#4__u8DE8_u6587_u6863_u901A_u4FE1_u5B9E_u73B0_u65B9_u5F0F" class="headerlink" title="4 跨文档通信实现方式"></a>4 跨文档通信实现方式</h3><h4 id="4-1_Window_u547D_u540D_u7A7A_u95F4_u8FDB_u884C_u4F20_u9012_uFF1A"><a href="#4-1_Window_u547D_u540D_u7A7A_u95F4_u8FDB_u884C_u4F20_u9012_uFF1A" class="headerlink" title="4.1 Window命名空间进行传递："></a>4.1 Window命名空间进行传递：</h4><p>window.name = “hello”;</p>
 <p>优点：简单<br>缺点：</p>
 <ul>
 <li>无法跨域</li>
 <li>无法实现不同窗体之间的通信</li>
 </ul>
 <p>示例代码<a href="http://iwuly.com/snippets/?searchId=003">window.name实现的跨域数据传输</a></p>
-<h5 id="4-2_postmessage"><a href="#4-2_postmessage" class="headerlink" title="4.2 postmessage"></a>4.2 postmessage</h5><p>信差大使——postmessage: 监听message事件，通过event对象获取消息</p>
+<h4 id="4-2_postmessage"><a href="#4-2_postmessage" class="headerlink" title="4.2 postmessage"></a>4.2 postmessage</h4><p>信差大使——postmessage: 监听message事件，通过event对象获取消息</p>
 <p>data   包含任意字符串数据，由原始脚本发送<br>origin 一个字符串，包含原始文档的方案、域名以及端口(如：<a href="http://domain.example:80" target="_blank" rel="external">http://domain.example:80</a>)<br>lastEventId 一个字符串，包含了当前的消息事件的唯一标识符。<br>source 原始文件的窗口的引用。更确切地说，它是一个WindowProxy对象。<br>ports  一个数组，包含任何MessagePort对象发送消息。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> messageHandle = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    alert(<span class="number">1</span>);</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(<span class="built_in">window</span>.addEventListener) &#123;</span><br><span class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">'message'</span>, messageHandle, <span class="literal">false</span>);</span><br><span class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span> (<span class="built_in">window</span>.attachEvent) &#123;<span class="comment">//IE的写法</span></span><br><span class="line">    <span class="built_in">window</span>.attachEvent(<span class="string">'onmessage'</span>,messageHandle);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.parent.frames[<span class="number">1</span>].postMessage(message,<span class="string">'*'</span>);</span><br></pre></td></tr></table></figure>
 <p>示例代码请<a href="http://iwuly.com/snippets/?searchId=004">postMessage跨文档实现方案</a></p>
 <hr>
-<h4 id="5__u53C2_u8003_u6587_u6863"><a href="#5__u53C2_u8003_u6587_u6863" class="headerlink" title="5 参考文档"></a>5 参考文档</h4><p><a href="http://www.iqiyi.com/w_19rs59narl.html?t=1454829077177#vfrm=8-8-0-3" target="_blank" rel="external">HTML5即时通讯</a><br><a href="http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m2" target="_blank" rel="external">JavaScript跨域总结与解决办法</a><br><a href="http://blog.csdn.net/z69183787/article/details/19191385" target="_blank" rel="external">JSONP原理优缺点</a><br><a href="http://blog.phpha.com/backup/archives/1668.html" target="_blank" rel="external">基于WEB的实时通信方案</a><br><a href="http://blog.csdn.net/bao19901210/article/details/21458001" target="_blank" rel="external">window.name实现的跨域数据传输</a><br><a href="http://www.cnblogs.com/dolphinX/p/3464056.html" target="_blank" rel="external">html5 postMessage解决跨域、跨窗口消息传递</a></p>
+<h3 id="5__u53C2_u8003_u6587_u6863"><a href="#5__u53C2_u8003_u6587_u6863" class="headerlink" title="5 参考文档"></a>5 参考文档</h3><p><a href="http://www.iqiyi.com/w_19rs59narl.html?t=1454829077177#vfrm=8-8-0-3" target="_blank" rel="external">HTML5即时通讯</a><br><a href="http://www.cnblogs.com/rainman/archive/2011/02/20/1959325.html#m2" target="_blank" rel="external">JavaScript跨域总结与解决办法</a><br><a href="http://blog.csdn.net/z69183787/article/details/19191385" target="_blank" rel="external">JSONP原理优缺点</a><br><a href="http://blog.phpha.com/backup/archives/1668.html" target="_blank" rel="external">基于WEB的实时通信方案</a><br><a href="http://blog.csdn.net/bao19901210/article/details/21458001" target="_blank" rel="external">window.name实现的跨域数据传输</a><br><a href="http://www.cnblogs.com/dolphinX/p/3464056.html" target="_blank" rel="external">html5 postMessage解决跨域、跨窗口消息传递</a></p>
 
       
     </div>
@@ -514,7 +514,7 @@ Hidden IFrame(Forever IFrames)
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -524,7 +524,7 @@ Hidden IFrame(Forever IFrames)
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">18</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -631,7 +631,7 @@ Hidden IFrame(Forever IFrames)
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1__u4EC0_u4E48_u662F_u5B9E_u65F6_u901A_u4FE1"><span class="nav-number">1.</span> <span class="nav-text">1 什么是实时通信</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2__u5B9E_u65F6web_u7684_u6F14_u53D8"><span class="nav-number">2.</span> <span class="nav-text">2 实时web的演变</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Ajax_u76DB_u884C_u4E4B_u524D"><span class="nav-number">2.1.</span> <span class="nav-text">Ajax盛行之前</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-1__u8F6E_u8BE2_uFF08polling_uFF09"><span class="nav-number">2.2.</span> <span class="nav-text">2.1 轮询（polling）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-2_Comet_uFF1A_u57FA_u4E8EHTTP_u957F_u8FDE_u63A5_u7684_u201C_u670D_u52A1_u5668_u63A8_u201D_u6280_u672F"><span class="nav-number">2.3.</span> <span class="nav-text">2.2 Comet：基于HTTP长连接的“服务器推”技术</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#http_u5B9E_u65F6_u901A_u4FE1_u7F3A_u9677"><span class="nav-number">2.4.</span> <span class="nav-text">http实时通信缺陷</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3_websocket_u4ECB_u7ECD"><span class="nav-number">3.</span> <span class="nav-text">3 websocket介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-1_websocket_u7684_u8BDE_u751F"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 websocket的诞生</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2_websocket_u63A5_u53E3"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 websocket接口</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-3_websocket__u5B9E_u4F8B"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 websocket 实例</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4__u8DE8_u6587_u6863_u901A_u4FE1_u5B9E_u73B0_u65B9_u5F0F"><span class="nav-number">4.</span> <span class="nav-text">4 跨文档通信实现方式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-1_Window_u547D_u540D_u7A7A_u95F4_u8FDB_u884C_u4F20_u9012_uFF1A"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 Window命名空间进行传递：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-2_postmessage"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 postmessage</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5__u53C2_u8003_u6587_u6863"><span class="nav-number">5.</span> <span class="nav-text">5 参考文档</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1__u4EC0_u4E48_u662F_u5B9E_u65F6_u901A_u4FE1"><span class="nav-number">1.</span> <span class="nav-text">1 什么是实时通信</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2__u5B9E_u65F6web_u7684_u6F14_u53D8"><span class="nav-number"></span> <span class="nav-text">2 实时web的演变</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Ajax_u76DB_u884C_u4E4B_u524D"><span class="nav-number">1.</span> <span class="nav-text">Ajax盛行之前</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1__u8F6E_u8BE2_uFF08polling_uFF09"><span class="nav-number">2.</span> <span class="nav-text">2.1 轮询（polling）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2_Comet_uFF1A_u57FA_u4E8EHTTP_u957F_u8FDE_u63A5_u7684_u201C_u670D_u52A1_u5668_u63A8_u201D_u6280_u672F"><span class="nav-number">3.</span> <span class="nav-text">2.2 Comet：基于HTTP长连接的“服务器推”技术</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#http_u5B9E_u65F6_u901A_u4FE1_u7F3A_u9677"><span class="nav-number">4.</span> <span class="nav-text">http实时通信缺陷</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3_websocket_u4ECB_u7ECD"><span class="nav-number"></span> <span class="nav-text">3 websocket介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1_websocket_u7684_u8BDE_u751F"><span class="nav-number">1.</span> <span class="nav-text">3.1 websocket的诞生</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2_websocket_u63A5_u53E3"><span class="nav-number">2.</span> <span class="nav-text">3.2 websocket接口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-3_websocket__u5B9E_u4F8B"><span class="nav-number">3.</span> <span class="nav-text">3.3 websocket 实例</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4__u8DE8_u6587_u6863_u901A_u4FE1_u5B9E_u73B0_u65B9_u5F0F"><span class="nav-number"></span> <span class="nav-text">4 跨文档通信实现方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-1_Window_u547D_u540D_u7A7A_u95F4_u8FDB_u884C_u4F20_u9012_uFF1A"><span class="nav-number">1.</span> <span class="nav-text">4.1 Window命名空间进行传递：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-2_postmessage"><span class="nav-number">2.</span> <span class="nav-text">4.2 postmessage</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5__u53C2_u8003_u6587_u6863"><span class="nav-number"></span> <span class="nav-text">5 参考文档</span></a></div>
             
           </div>
         </section>
